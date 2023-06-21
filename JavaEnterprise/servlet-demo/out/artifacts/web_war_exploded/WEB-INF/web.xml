@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+    <welcome-file-list>
+        <welcome-file>
+            login2.html
+        </welcome-file>
+    </welcome-file-list>
+    <!--配置类名-->
+    <!--<servlet>-->
+        <!--<servlet-name>随意一般是类名小写</servlet-name>-->
+        <!--<servlet-name>包名+类名</servlet-name>-->
+   <!-- </servlet>-->
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <!--配置请求和类名的关系-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>随意一般是类名小写</servlet-name>-->
+        <!--<url-pattern>/+请求名</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+</web-app>

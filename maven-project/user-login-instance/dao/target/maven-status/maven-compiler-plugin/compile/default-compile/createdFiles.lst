@@ -1,0 +1,4 @@
+com\fch\dao\ProductDao.class
+com\fch\dao\UserDao.class
+com\fch\dao\impl\ProductDaoImpl.class
+com\fch\dao\impl\UserDaoImpl.class

@@ -1,0 +1,4 @@
+com\fch\service\impl\UserServiceImpl.class
+com\fch\service\UserService.class
+com\fch\service\impl\ProductServiceImpl.class
+com\fch\service\ProductService.class

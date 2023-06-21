@@ -1,0 +1,2 @@
+Student{stuNo=1202304280907391, stuName='张三, stuAge=18, sex=男, courses=[Course{couNo='001', couName='语文', couScore=150.0}, Course{couNo='003', couName='英语', couScore=150.0}, Course{couNo='002', couName='数学', couScore=150.0}]}
+Student{stuNo=4202304280907394, stuName='mazi, stuAge=18, sex=男, courses=[]}

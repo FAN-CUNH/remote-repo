@@ -1,0 +1,2 @@
+[stuNo=001,stuName=zhangsan]
+[stuNo=002,stuName=lisi]
