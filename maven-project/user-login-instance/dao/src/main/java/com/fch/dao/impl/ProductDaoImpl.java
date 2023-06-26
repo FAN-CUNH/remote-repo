@@ -74,8 +74,13 @@ public class ProductDaoImpl implements ProductDao {
         return false;
     }
 
+
     /**
-     * @param
+     * @param pid
+     * @param pname
+     * @param market_price
+     * @param shop_price
+     * @param cid
      * @return
      */
     @Override

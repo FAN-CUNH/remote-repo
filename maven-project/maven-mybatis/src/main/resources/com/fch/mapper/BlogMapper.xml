@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fch.mapper.BlogMapper">
+    <select id="selectBlog" resultType="Blog">
+        select * from Blog
+    </select>
+
+    <insert id="insertBlog">
+        <!-- 第一种 -->
+        insert into Blog (id, title, content) values (#{id}, #{title}, #{content});
+
+        <!-- 第二种 -->
+        <!--insert into Blog (id, title, content) values (#{id}, #{title}, #{content});-->
+    </insert>
+
+    <update id="updateBlog">
+        update Blog set
+        title = #{title},
+        content = #{content}
+        where id = #{id}
+    </update>
+
+    <delete id="deleteBlog">
+        delete from Blog where id = #{id}
+    </delete>
+</mapper>

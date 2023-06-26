@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e50290be-3e1d-4c92-b1dd-429aaef781cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../maven-mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/springboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/SpringbootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/SpringbootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/controller/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/controller/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/controller/RequestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/controller/ResponseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/controller/ResponseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/dao/EmpDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/dao/EmpDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/dao/impl/EmpDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/dao/impl/EmpDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/service/impl/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/service/impl/EmpServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/utils/XmlParserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/classes/com/fch/utils/XmlParserUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/springboot-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/springboot-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/springboot-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/springboot-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/surefire-reports/TEST-com.fch.SpringbootApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/surefire-reports/TEST-com.fch.SpringbootApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/surefire-reports/com.fch.SpringbootApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/surefire-reports/com.fch.SpringbootApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/test-classes/com/fch/SpringbootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java-SpringBoot/springboot/target/test-classes/com/fch/SpringbootApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Cartitem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Orderitem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/classes/com/fch/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/common-bean-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-bean/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/fch/dao/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/fch/dao/impl/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/CartDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/OrderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/ProductDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/impl/CartDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/impl/OrderDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/impl/ProductDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/fch/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/CartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/impl/CartServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/impl/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/fch/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/classes/com/fch/BaseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/classes/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/utils-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/fch/filter/BaseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/fch/servlet/CartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/fch/servlet/OrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/fch/servlet/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/fch/servlet/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/fch/filter/BaseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/fch/servlet/CartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/fch/servlet/OrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/fch/servlet/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/fch/servlet/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/common-bean-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/druid-1.0.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/fastjson-1.2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jackson-core-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jackson-databind-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/utils-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/556d64fcNf28f90d0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/c_0050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs10010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs20010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs30010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs40011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs50010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs60010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/cs70010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/duanxue1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/duanxue2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/duanxue3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/duanxue4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/1/nvxie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/155210007679548_y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/562d008aN963ce5f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/5632bdf8N789e6659.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/5632c2eeNbc918af0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/90560009093007_y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/c_0007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/dn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/dn2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/big01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/middle01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/hao/small09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/news_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/products/news_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/showProductMess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-admin-template" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../maven-mybatis/mybatis基本信息.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.2\mav-repo" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectId" id="2RfyWlgzqVOSIvSwgUrYTesvWAO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/mallchat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\maven-project\maven-mybatis" />
+      <recent name="E:\IntelliJ-IDEA-Project\maven-project\maven-mybatis\src\main\resources\com\fch\mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\maven-project\maven-mybatis\src\main\resources\com\fch\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisTest.mybatis">
+    <configuration name="Mybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.bean.test.Mybatis" />
+      <module name="maven-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.bean.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fch.Test" />
+      <module name="maven-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-mybatis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MybatisTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.mybatis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-mybatis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MybatisTest" />
+      <option name="METHOD_NAME" value="mybatis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallchatCustomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="mallchat-custom-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abin.mallchat.custom.MallchatCustomApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.28" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/web_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="5c3a5307-4a7d-4110-86bc-1fe22750eb1f" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50768" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../vue-admin-template/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Mybatis" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.MybatisTest" />
+      <item itemvalue="JUnit.MybatisTest.mybatis" />
+      <item itemvalue="npm.run" />
+      <item itemvalue="Spring Boot.MallchatCustomApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.28" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisTest.mybatis" />
+        <item itemvalue="JUnit.MybatisTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Mybatis" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e50290be-3e1d-4c92-b1dd-429aaef781cd" name="Changes" comment="" />
+      <created>1687655466647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687655466647</updated>
+      <workItem from="1687655467752" duration="36739000" />
+      <workItem from="1687741387808" duration="7546000" />
+      <workItem from="1687755049893" duration="1870000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

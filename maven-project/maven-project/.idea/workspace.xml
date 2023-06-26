@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657b174e-0850-47cd-82c0-7eb3a34e4cac" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/../vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-admin-template" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vue-admin-template/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-admin-template/src/layout/components/Navbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vue-admin-template/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-admin-template/src/permission.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vue-admin-template/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-admin-template/src/router/index.js" afterDir="false" />
@@ -47,7 +48,7 @@
         <entry key="$PROJECT_DIR$/../vue-admin-template" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../vue-admin-template" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;history&quot;: [
@@ -118,7 +119,7 @@
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/IntelliJ IDEA Project/maven-project/user-login-instance/common-bean/src/main/java/com/fch/bean",
+    "last_opened_file_path": "E:/IntelliJ IDEA Project/Java-SpringBoot/springboot",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -314,6 +315,8 @@
       <workItem from="1687178979037" duration="4666000" />
       <workItem from="1687223766140" duration="34029000" />
       <workItem from="1687309760504" duration="6195000" />
+      <workItem from="1687333577048" duration="1264000" />
+      <workItem from="1687498064212" duration="78000" />
     </task>
     <servers />
   </component>
@@ -336,7 +339,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
