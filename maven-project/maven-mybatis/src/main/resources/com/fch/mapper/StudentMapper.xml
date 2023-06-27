@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fch.mapper.StudentMapper">
+    <!-- 通过学生学号删除学生信息 -->
+    <delete id="deleteByStuNo">
+        delete from student where stu_no = #{stuNo}
+    </delete>
+
+    <!-- 查询所有学生信息 并排序 -->
+    <select id="selectAllStudent" resultType="com.fch.bean.Student">
+        select * from student order by ${sortByThing} desc
+    </select>
+
+    <!-- 查询单个学生信息 -->
+    <select id="selectByStuNo" resultType="com.fch.bean.Student">
+        select * from student where stu_no = #{stuNo}
+    </select>
+
+    <!-- 查询所有学生信息包含成绩信息 -->
+    <select id="selectAllMess" resultMap="studentMap">
+        select *
+        from student
+                 left join score s on student.stu_no = s.stu_no
+    </select>
+    <!-- 自定义的resultMap -->
+    <resultMap id="studentMap" type="com.fch.bean.Student">
+        <id column="stu_no" property="stuNo"/>
+        <result column="stu_name" property="stuName"/>
+        <result column="stu_age" property="stuAge"/>
+        <result column="password" property="password"/>
+        <result column="birthday" property="birthday"/>
+        <collection property="scores" ofType="com.fch.bean.Score">
+            <id column="sco_no" property="scoNo"/>
+            <result column="sto_no" property="stuNo"/>
+            <result column="cou_no" property="couNo"/>
+            <result column="score" property="score"/>
+        </collection>
+    </resultMap>
+
+    <!-- 插入学生信息 -->
+    <insert id="insertStudent">
+        insert into student values (#{stuNo}, #{password}, #{stuName}, #{stuAge}, #{birthday})
+    </insert>
+
+    <!-- 通过学生学号更新学生信息 -->
+    <update id="updateByStuNo">
+        update student set stu_name = #{stuName}, password = #{password}, birthday = #{birthday} where stu_no = #{stuNo}
+    </update>
+
+</mapper>
