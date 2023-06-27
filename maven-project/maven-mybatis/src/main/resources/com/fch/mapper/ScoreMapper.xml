@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fch.mapper.ScoreMapper">
+
+    <!-- 查询所有的成绩信息包含学生信息 -->
+    <select id="selectAll" resultMap="scoreMap">
+        select *
+        from score
+                 inner join student s on score.stu_no = s.stu_no
+    </select>
+
+    <!-- 自定义的resultMap -> scoreMap -->
+    <resultMap id="scoreMap" type="com.fch.bean.Score">
+        <id column="sco_no" property="scoNo"/>
+        <result column="stu_no" property="stuNo"/>
+        <result column="cou_no" property="couNo"/>
+        <result column="score" property="score"/>
+        <association property="student" javaType="com.fch.bean.Student">
+            <id column="stu_no" property="stuNo"/>
+            <result column="stu_name" property="stuName"/>
+            <result column="stu_age" property="stuAge"/>
+            <result column="password" property="password"/>
+            <result column="birthday" property="birthday"/>
+        </association>
+    </resultMap>
+</mapper>

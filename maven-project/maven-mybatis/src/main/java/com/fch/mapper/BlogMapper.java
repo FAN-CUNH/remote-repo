@@ -23,12 +23,16 @@ public interface BlogMapper {
     List<Blog> selectBlog();
 
     /**
+     * 对象方式插入blog
+     *
      * @param blog 插入数据库的对象
      */
     // 第一种
     void insertBlog(Blog blog);
 
     /**
+     * param参数传递多个参数
+     *
      * @param id      插入的id
      * @param title   插入的title
      * @param content 插入的content

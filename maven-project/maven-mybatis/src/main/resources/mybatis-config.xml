@@ -6,6 +6,11 @@
     <!-- 读取或者设置配置文件的参数 -->
     <properties resource="db.properties"/>
 
+    <settings>
+        <!-- 开启驼峰命名 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
     <!-- 利用包名直接将bean包下所有的实体类按类名来起别名 -->
     <typeAliases>
         <package name="com.fch.bean"/>
