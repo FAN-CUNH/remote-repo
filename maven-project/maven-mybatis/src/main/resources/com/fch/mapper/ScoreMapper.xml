@@ -3,12 +3,50 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fch.mapper.ScoreMapper">
+    <!-- 插入多行行学生成绩 -->
+    <insert id="insert">
+        insert into score
+        <foreach collection="collection" open="values" separator="," item="score">
+            (#{score.scoNo}, #{score.stuNo}, #{score.couNo}, #{score.score})
+        </foreach>
+    </insert>
+
+    <!-- 批量删除成绩 -->
+    <delete id="deleteByScoNos">
+        delete
+        from score
+        where
+        <foreach collection="list" item="scoNo" separator="," open="sco_no in (" close=")">
+            #{scoNo}
+        </foreach>
+    </delete>
 
     <!-- 查询所有的成绩信息包含学生信息 -->
-    <select id="selectAll" resultMap="scoreMap">
+    <select id="selectAll" resultMap="scoreMap1">
         select *
         from score
                  inner join student s on score.stu_no = s.stu_no
+    </select>
+
+    <!-- 通过学号查询课程成绩 -->
+    <select id="selectByStuNo" resultType="com.fch.bean.Score">
+        select *
+        from score
+        where stu_no = #{stuNo}
+    </select>
+
+    <!-- 动态sql -->
+    <select id="selectByCondition" resultType="com.fch.bean.Score">
+        select * from score
+        <where>
+            <if test="stuNo != null and stuNo != ''">
+                stu_no = #{stuNo}
+            </if>
+
+            <if test="couNo != null and couNo != ''">
+                and cou_no = #{couNo}
+            </if>
+        </where>
     </select>
 
     <!-- 自定义的resultMap -> scoreMap -->
@@ -25,4 +63,11 @@
             <result column="birthday" property="birthday"/>
         </association>
     </resultMap>
+
+    <!-- 使用关联嵌套的方式映射结果集 -->
+    <resultMap id="scoreMap1" type="com.fch.bean.Score">
+        <association property="student" javaType="com.fch.bean.Student" column="stu_no"
+                     select="com.fch.mapper.StudentMapper.selectByStuNo"/>
+    </resultMap>
+
 </mapper>

@@ -19,7 +19,7 @@
     </select>
 
     <!-- 查询所有学生信息包含成绩信息 -->
-    <select id="selectAllMess" resultMap="studentMap">
+    <select id="selectAllMess" resultMap="studentMap1">
         select *
         from student
                  left join score s on student.stu_no = s.stu_no
@@ -37,6 +37,11 @@
             <result column="cou_no" property="couNo"/>
             <result column="score" property="score"/>
         </collection>
+    </resultMap>
+
+    <!-- 使用关联的嵌套查询 -->
+    <resultMap id="studentMap1" type="com.fch.bean.Student">
+        <collection property="scores" ofType="com.fch.bean.Score" fetchType="lazy" column="stu_no" select="com.fch.mapper.ScoreMapper.selectByScoNo"/>
     </resultMap>
 
     <!-- 插入学生信息 -->
