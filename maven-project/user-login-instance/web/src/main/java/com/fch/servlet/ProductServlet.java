@@ -81,8 +81,6 @@ public class ProductServlet extends HttpServlet {
 
         // 获取所有商品类别信息
         else if (uri.endsWith("queryAllProductCategory.do")) {
-            // 定义一个集合用于存储所有种类名
-            List<String> list = new ArrayList<>(16);
 
             // 调用业务逻辑层
             Result<Object> result = productService.queryAllProductCategory();

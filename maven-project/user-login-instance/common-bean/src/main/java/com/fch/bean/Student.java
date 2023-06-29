@@ -5,39 +5,39 @@ import java.util.List;
 
 public class Student {
 
-  private String stuNo;
+  private String stu_no;
   private String password;
-  private String stuName;
-  private long stuAge;
+  private String stu_name;
+  private long stu_age;
   private String birthday;
   private List<Course> courses;
 
   public Student() {
   }
 
-  public Student(String stuNo, String password, String stuName, long stuAge, String birthday, List<Course> courses) {
-    this.stuNo = stuNo;
+  public Student(String stu_no, String password, String stu_name, long stu_age, String birthday, List<Course> courses) {
+    this.stu_no = stu_no;
     this.password = password;
-    this.stuName = stuName;
-    this.stuAge = stuAge;
+    this.stu_name = stu_name;
+    this.stu_age = stu_age;
     this.birthday = birthday;
     this.courses = courses;
   }
 
   /**
    * 获取
-   * @return stuNo
+   * @return stu_no
    */
-  public String getStuNo() {
-    return stuNo;
+  public String getStu_no() {
+    return stu_no;
   }
 
   /**
    * 设置
-   * @param stuNo
+   * @param stu_no
    */
-  public void setStuNo(String stuNo) {
-    this.stuNo = stuNo;
+  public void setStu_no(String stu_no) {
+    this.stu_no = stu_no;
   }
 
   /**
@@ -58,34 +58,34 @@ public class Student {
 
   /**
    * 获取
-   * @return stuName
+   * @return stu_name
    */
-  public String getStuName() {
-    return stuName;
+  public String getStu_name() {
+    return stu_name;
   }
 
   /**
    * 设置
-   * @param stuName
+   * @param stu_name
    */
-  public void setStuName(String stuName) {
-    this.stuName = stuName;
+  public void setStu_name(String stu_name) {
+    this.stu_name = stu_name;
   }
 
   /**
    * 获取
-   * @return stuAge
+   * @return stu_age
    */
-  public long getStuAge() {
-    return stuAge;
+  public long getStu_age() {
+    return stu_age;
   }
 
   /**
    * 设置
-   * @param stuAge
+   * @param stu_age
    */
-  public void setStuAge(long stuAge) {
-    this.stuAge = stuAge;
+  public void setStu_age(long stu_age) {
+    this.stu_age = stu_age;
   }
 
   /**
@@ -121,6 +121,6 @@ public class Student {
   }
 
   public String toString() {
-    return "Student{stuNo = " + stuNo + ", password = " + password + ", stuName = " + stuName + ", stuAge = " + stuAge + ", birthday = " + birthday + ", courses = " + courses + "}";
+    return "Student{stu_no = " + stu_no + ", password = " + password + ", stu_name = " + stu_name + ", stu_age = " + stu_age + ", birthday = " + birthday + ", courses = " + courses + "}";
   }
 }

@@ -28,7 +28,7 @@ public interface UserDao {
 
     public Page<User> getAllUserMess(int currentPage, int pageSize);
 
-    boolean deleteUserById(String stuNo);
+    boolean deleteUserById(String stu_no);
 
     boolean updateUserById(String userId,String password, String userName, String name, String email, String telephone, String sex);
 
@@ -36,11 +36,11 @@ public interface UserDao {
 
     Page<Student> getAllStudentMessAndCourseMess(String currentPage, String pageSize);
 
-    List<Course> getCourseMess(String stuNo);
+    List<Course> getCourseMess(String stu_no);
 
-    boolean addCourse(String couNo, String stuNo);
+    boolean addCourse(String cou_no, String stu_no);
 
-    boolean deleteCourse(String couNo, String stuNo);
+    boolean deleteCourse(String cou_no, String stu_no);
 
-    boolean deleteStudent(String stuNo);
+    boolean deleteStudent(String stu_no);
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fch.mapper.ProductMapper">
+    <insert id="addProduct">
+        insert into product (pid, pname, market_price, cid) values (#{pid}, #{pname}, #{marketPrice}, #{cid})
+    </insert>
+    <update id="updateProduct">
+        update product set pname = #{pname}, market_price = #{marketPrice}, cid = #{cid} where pid = #{pid}
+    </update>
+    <delete id="deleteProductByPids">
+        delete from product
+        where
+        <foreach collection="list" separator="," item="pid" open="pid in (" close=")">
+            #{pid}
+        </foreach>
+    </delete>
+
+    <select id="selectProduct" resultMap="productMap">
+        select pid, pname, market_price, shop_price, pdate, cid from product
+        <where>
+            <if test="pid != null and pid != ''">
+                pid = #{pid}
+            </if>
+            <if test="pname != null and pname != ''">
+                and pname like concat('%',#{pname},'%')
+            </if>
+        </where>
+    </select>
+    <select id="getProductByPid" resultType="com.fch.bean.Product">
+        select pid, pname, market_price, shop_price, cid from product where pid = #{pid}
+    </select>
+
+    <resultMap id="productMap" type="com.fch.bean.Product">
+        <association property="category" column="cid" select="com.fch.mapper.CategoryMapper.selectByCid" javaType="com.fch.bean.Category"/>
+    </resultMap>
+</mapper>

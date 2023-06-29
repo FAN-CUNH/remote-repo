@@ -26,7 +26,7 @@ public interface UserService {
 
     Page<User> getAllUserMess(int currentPage, int pageSize);
 
-    boolean deleteUserById(String stuNo);
+    boolean deleteUserById(String stu_no);
 
     boolean updateUserById(String userId,String password, String userName, String name, String email, String telephone, String sex);
 
@@ -34,11 +34,11 @@ public interface UserService {
 
     Result<Object> getAllStudentMessAndCourseMess(String currentPage, String pageSize);
 
-    Result<Object> getCourseMess(String stuNo);
+    Result<Object> getCourseMess(String stu_no);
 
-    Result<Object> addCourse(String couNo, String stuNo);
+    Result<Object> addCourse(String cou_no, String stu_no);
 
-    Result<Object> deleteCourse(String couNo, String stuNo);
+    Result<Object> deleteCourse(String cou_no, String stu_no);
 
-    Result<Object> deleteStudent(String stuNo);
+    Result<Object> deleteStudent(String stu_no);
 }

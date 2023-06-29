@@ -41,8 +41,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean deleteUserById(String stuNo) {
-        return userDao.deleteUserById(stuNo);
+    public boolean deleteUserById(String stu_no) {
+        return userDao.deleteUserById(stu_no);
     }
 
     @Override
@@ -85,12 +85,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Result<Object> getCourseMess(String stuNo) {
+    public Result<Object> getCourseMess(String stu_no) {
         List<Course> courses;
         Result<Object> result;
         // 参数判断
-        if (stuNo != null && !"".equals(stuNo)) {
-            courses = userDao.getCourseMess(stuNo);
+        if (stu_no != null && !"".equals(stu_no)) {
+            courses = userDao.getCourseMess(stu_no);
             if (courses != null) {
                 result = new Result<>(20000, courses, "ok");
             } else {
@@ -103,15 +103,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Result<Object> addCourse(String couNo, String stuNo) {
+    public Result<Object> addCourse(String cou_no, String stu_no) {
         // 检验参数
         Result<Object> result;
-        if (couNo != null && !"".equals(couNo)) {
-            boolean add = userDao.addCourse(couNo, stuNo);
+        if (cou_no != null && !"".equals(cou_no)) {
+            boolean add = userDao.addCourse(cou_no, stu_no);
             if (add) {
-                result = new Result<>(20000, true, couNo+"号课程添加成功");
+                result = new Result<>(20000, true, cou_no+"号课程添加成功");
             } else {
-                result = new Result<>(400, false, couNo+"号课程添加失败");
+                result = new Result<>(400, false, cou_no+"号课程添加失败");
             }
         } else {
             result = new Result<>(400, null, "非法参数");
@@ -120,15 +120,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Result<Object> deleteCourse(String couNo, String stuNo) {
+    public Result<Object> deleteCourse(String cou_no, String stu_no) {
         // 检验参数
         Result<Object> result;
-        if (couNo != null && !"".equals(couNo)) {
-            boolean delete = userDao.deleteCourse(couNo, stuNo);
+        if (cou_no != null && !"".equals(cou_no)) {
+            boolean delete = userDao.deleteCourse(cou_no, stu_no);
             if (delete) {
-                result = new Result<>(20000, true, couNo+"号课程删除成功");
+                result = new Result<>(20000, true, cou_no+"号课程删除成功");
             } else {
-                result = new Result<>(400, false, couNo+"号课程删除失败");
+                result = new Result<>(400, false, cou_no+"号课程删除失败");
             }
         } else {
             result = new Result<>(400, null, "非法参数");
@@ -137,16 +137,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Result<Object> deleteStudent(String stuNo) {
+    public Result<Object> deleteStudent(String stu_no) {
         Result<Object> result;
         // 参数校验
-        if (stuNo != null && !"".equals(stuNo)) {
-            boolean delete = userDao.deleteStudent(stuNo);
+        if (stu_no != null && !"".equals(stu_no)) {
+            boolean delete = userDao.deleteStudent(stu_no);
             if (delete) {
-                result = new Result<>(20000, true, stuNo+"号学生删除成功");
+                result = new Result<>(20000, true, stu_no+"号学生删除成功");
                 System.out.println("删除成功");
             } else {
-                result = new Result<>(400, false, stuNo+"号学生删除失败");
+                result = new Result<>(400, false, stu_no+"号学生删除失败");
             }
         } else {
             result = new Result<>(400, false, "非法参数");

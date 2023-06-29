@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 读取或者设置配置文件的参数 -->
+    <properties resource="db.properties"/>
+
+    <settings>
+        <!-- 开启驼峰命名 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 利用包名直接将bean包下所有的实体类按类名来起别名 -->
+    <!--<typeAliases>
+        <package name="com.fch.bean"/>
+    </typeAliases>-->
+
+    <!-- 数据库环境配置 default="development" 默认使用哪个数据库环境 -->
+    <environments default="development">
+        <!-- 单个环境 -->
+        <environment id="development">
+            <!--事务处理方式 jdbc|managed 我们一般使用jdbc来处理事务 -->
+            <transactionManager type="JDBC">
+                <!--   <property name="skipSetAutoCommitOnClose" value="true"/>-->
+            </transactionManager>
+            <dataSource type="com.fch.utils.DruidDataSourceFactory">
+                <!-- 驱动 ,当我们使用druid的时候，原本的driver属性会失效，我们使用driverClassName -->
+                <property name="driverClassName" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!-- 自动读取当前包名下的所有XXXMapper.xml文件 -->
+        <package name="com.fch.mapper"/>
+    </mappers>
+</configuration>

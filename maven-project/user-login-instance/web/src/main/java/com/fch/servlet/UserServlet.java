@@ -115,7 +115,7 @@ public class UserServlet extends HttpServlet {
         }
 
         else if (uri.endsWith("deleteUserById.action")) {
-            // 获取请求参数 stuNo
+            // 获取请求参数 stu_no
             String userId = request.getParameter("userId");
             System.out.println("userId = " + userId);
             boolean code = userService.deleteUserById(userId);
@@ -178,13 +178,13 @@ public class UserServlet extends HttpServlet {
             // 响应数据
             response.getWriter().print(JSON.toJSONString(result));
         }
-        // 获取所有课程信息
+        // 获取可选课程信息
         else if (uri.endsWith("getCourseMess.action")) {
             // 获取请求参数
-            String stuNo = request.getParameter("stuNo");
+            String stu_no = request.getParameter("stu_no");
 
             // 调用业务逻辑层
-            Result<Object> result = userService.getCourseMess(stuNo);
+            Result<Object> result = userService.getCourseMess(stu_no);
 
             // 响应数据
             response.getWriter().print(JSON.toJSONString(result));
@@ -192,13 +192,13 @@ public class UserServlet extends HttpServlet {
         // 添加课程
         else if (uri.endsWith("addCourse.action")) {
             // 获取请求参数
-            String couNo = request.getParameter("couNo");
-            String stuNo = request.getParameter("stuNo");
-            System.out.println("couNo = " + couNo);
-            System.out.println("stuNo = " + stuNo);
+            String cou_no = request.getParameter("cou_no");
+            String stu_no = request.getParameter("stu_no");
+            System.out.println("cou_no = " + cou_no);
+            System.out.println("stu_no = " + stu_no);
 
             // 调用业务逻辑层
-            Result<Object> result = userService.addCourse(couNo, stuNo);
+            Result<Object> result = userService.addCourse(cou_no, stu_no);
 
             // 响应数据
             response.getWriter().print(JSON.toJSONString(result));
@@ -206,13 +206,13 @@ public class UserServlet extends HttpServlet {
         // 删除课程
         else if (uri.endsWith("deleteCourse.action")) {
             // 获取请求参数
-            String couNo = request.getParameter("couNo");
-            String stuNo = request.getParameter("stuNo");
-            System.out.println("couNo = " + couNo);
-            System.out.println("stuNo = " + stuNo);
+            String cou_no = request.getParameter("cou_no");
+            String stu_no = request.getParameter("stu_no");
+            System.out.println("cou_no = " + cou_no);
+            System.out.println("stu_no = " + stu_no);
 
             // 调用业务逻辑层
-            Result<Object> result = userService.deleteCourse(couNo, stuNo);
+            Result<Object> result = userService.deleteCourse(cou_no, stu_no);
 
             // 响应数据
             response.getWriter().print(JSON.toJSONString(result));
@@ -220,10 +220,10 @@ public class UserServlet extends HttpServlet {
         // 删除学生
         else if (uri.endsWith("deleteStudent.action")) {
             // 获取请求参数
-            String stuNo = request.getParameter("stuNo");
+            String stu_no = request.getParameter("stu_no");
 
             // 调用业务逻辑层
-            Result<Object> result = userService.deleteStudent(stuNo);
+            Result<Object> result = userService.deleteStudent(stu_no);
 
             // 响应数据
             response.getWriter().print(JSON.toJSONString(result));

@@ -123,12 +123,12 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public boolean deleteUserById(String stuNo) {
+    public boolean deleteUserById(String stu_no) {
         //0. 声明一个int类型的变量，用于表示当前删除状态 0: 失败 其他: 成功
         int code = 0;
 
         //0. 编写根据用户id删除用户信息
-        String sql = String.format("delete from user where userId = %s", stuNo);
+        String sql = String.format("delete from user where userId = %s", stu_no);
         System.out.println("删除用户sql = " + sql);
 
         //1. 执行sql
@@ -192,10 +192,10 @@ public class UserDaoImpl implements UserDao {
         //0. 编写查询所有学生信息和课程信息sql
         /*String sql = String.format("select *\n" +
                 "from student\n" +
-                "         left join stu_cou on student.stuNo = stu_cou.stuNo\n" +
-                "         left join course c on c.couNo = stu_cou.couNo\n" +
+                "         left join stu_cou on student.stu_no = stu_cou.stu_no\n" +
+                "         left join course c on c.cou_no = stu_cou.cou_no\n" +
                 "limit %s, %s", (currentPageInt - 1) * pageSizeInt, pageSizeInt);
-        String sql1 = ("select count(0) from student left join stu_cou on student.stuNo = stu_cou.stuNo");*/
+        String sql1 = ("select count(0) from student left join stu_cou on student.stu_no = stu_cou.stu_no");*/
         String sql = String.format("select * from student limit %s, %s", (currentPageInt - 1) * pageSizeInt, pageSizeInt);
         System.out.println("sql = " + sql);
 
@@ -208,7 +208,7 @@ public class UserDaoImpl implements UserDao {
             if (students != null && students.size() > 0) {
                 count = (long) queryRunner.query(conn, "select count(0) from student", new ScalarHandler());
                 for (Student student : students) {
-                    String sql1 = String.format("select * from course where couNo in (select couNo from stu_cou where stuNo = %s)", student.getStuNo());
+                    String sql1 = String.format("select * from course where cou_no in (select cou_no from stu_cou where stu_no = %s)", student.getStu_no());
                     List<Course> courses = queryRunner.query(conn, sql1, new BeanListHandler<>(Course.class));
                     if (courses != null) {
                         student.setCourses(courses);
@@ -222,9 +222,9 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public List<Course> getCourseMess(String stuNo) {
+    public List<Course> getCourseMess(String stu_no) {
         //0. 编写查询所有可选课程信息的sql
-        String sql = String.format("select * from course where couNo not in (select couNo from stu_cou where stuNo = %s)", stuNo);
+        String sql = String.format("select * from course where cou_no not in (select cou_no from stu_cou where stu_no = %s)", stu_no);
         System.out.println("sql = " + sql);
 
         //1. 执行sql
@@ -239,9 +239,9 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public boolean addCourse(String couNo, String stuNo) {
+    public boolean addCourse(String cou_no, String stu_no) {
         //0. 编写添加课程sql
-        String sql = String.format("insert into stu_cou values ('%s', '%s')", stuNo, couNo);
+        String sql = String.format("insert into stu_cou values ('%s', '%s')", stu_no, cou_no);
         System.out.println("sql = " + sql);
 
         //1. 执行sql
@@ -255,9 +255,9 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public boolean deleteCourse(String couNo, String stuNo) {
+    public boolean deleteCourse(String cou_no, String stu_no) {
         //0. 编写添加课程sql
-        String sql = String.format("delete from stu_cou where stuNo = '%s' and couNo = '%s'", stuNo, couNo);
+        String sql = String.format("delete from stu_cou where stu_no = '%s' and cou_no = '%s'", stu_no, cou_no);
         System.out.println("sql = " + sql);
 
         //1. 执行sql
@@ -276,14 +276,14 @@ public class UserDaoImpl implements UserDao {
      * 1. 删除该学生的所有课程
      * 2. 删除该学生
      *
-     * @param stuNo 学号
+     * @param stu_no 学号
      * @return 返回删除状态
      */
     @Override
-    public boolean deleteStudent(String stuNo) {
+    public boolean deleteStudent(String stu_no) {
         //0. 编写删除该学号的所有课程和删除该生的sql
-        String sql = String.format("delete from stu_cou where stuNo = '%s'", stuNo);
-        String sql1 = String.format("delete from student where stuNo = '%s'", stuNo);
+        String sql = String.format("delete from stu_cou where stu_no = '%s'", stu_no);
+        String sql1 = String.format("delete from student where stu_no = '%s'", stu_no);
         System.out.println("sql = " + sql);
         System.out.println("sql1 = " + sql1);
 

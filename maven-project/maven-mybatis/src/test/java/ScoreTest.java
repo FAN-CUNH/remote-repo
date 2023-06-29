@@ -93,4 +93,22 @@ public class ScoreTest {
             scores.forEach(System.out::println);
         }
     }
+
+    @Test
+    public void updateByScoNo() {
+        //0. 获取SqlSessionFactory
+        SqlSessionFactory sqlSessionFactory = MybatisUtil.getSqlSessionFactory();
+
+        //1. 获取SqlSession
+        try (SqlSession session = sqlSessionFactory.openSession()) {
+            //2. 自动装载
+            ScoreMapper scoreMapper = session.getMapper(ScoreMapper.class);
+
+            //3. 调用 scoreMapper 的方法
+            scoreMapper.updateByScoNo(new Score("001", null, null, 100, null));
+
+            //4. 提交
+            session.commit();
+        }
+    }
 }

@@ -46,4 +46,11 @@ public interface ScoreMapper {
      * @return 返回查询到的课程集合
      */
     List<Score> selectByCondition(@Param("couNo") String couNo,@Param("stuNo") String stuNo);
+
+    /**
+     * 通过成绩编号更新单个成绩信息
+     *
+     * @param score 成绩对象携带需要更新的成绩信息
+     */
+    void updateByScoNo(Score score);
 }

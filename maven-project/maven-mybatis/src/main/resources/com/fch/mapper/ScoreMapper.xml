@@ -11,6 +11,26 @@
         </foreach>
     </insert>
 
+    <!-- 通过成绩编号更新成绩信息 -->
+    <update id="updateByScoNo">
+        update score
+        <set>
+            <if test="scoNo != null and scoNo != ''">
+                sco_no = #{scoNo},
+            </if>
+            <if test="stuNo != null and stuNo != ''">
+                stu_no = #{stuNo},
+            </if>
+            <if test="couNo != null and couNo != ''">
+                cou_no = #{couNo},
+            </if>
+            <if test="score != null">
+                score = #{score},
+            </if>
+        </set>
+        where sco_no = #{scoNo}
+    </update>
+
     <!-- 批量删除成绩 -->
     <delete id="deleteByScoNos">
         delete

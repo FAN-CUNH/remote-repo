@@ -3,51 +3,50 @@ package com.fch.bean;
 
 public class Course {
 
-  private String couNo;
-  private String couName;
-
+  private String cou_no;
+  private String cou_name;
 
   public Course() {
   }
 
-  public Course(String couNo, String couName) {
-    this.couNo = couNo;
-    this.couName = couName;
+  public Course(String cou_no, String cou_name) {
+    this.cou_no = cou_no;
+    this.cou_name = cou_name;
   }
 
   /**
    * 获取
-   * @return couNo
+   * @return cou_no
    */
-  public String getCouNo() {
-    return couNo;
+  public String getCou_no() {
+    return cou_no;
   }
 
   /**
    * 设置
-   * @param couNo
+   * @param cou_no
    */
-  public void setCouNo(String couNo) {
-    this.couNo = couNo;
+  public void setCou_no(String cou_no) {
+    this.cou_no = cou_no;
   }
 
   /**
    * 获取
-   * @return couName
+   * @return cou_name
    */
-  public String getCouName() {
-    return couName;
+  public String getCou_name() {
+    return cou_name;
   }
 
   /**
    * 设置
-   * @param couName
+   * @param cou_name
    */
-  public void setCouName(String couName) {
-    this.couName = couName;
+  public void setCou_name(String cou_name) {
+    this.cou_name = cou_name;
   }
 
   public String toString() {
-    return "Course{couNo = " + couNo + ", couName = " + couName + "}";
+    return "Course{cou_no = " + cou_no + ", cou_name = " + cou_name + "}";
   }
 }
