@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- <bean id="user" name="user" class="com.fch.bean.User"> id 唯一标识 name 别名 -->
     <bean id="user" class="com.fch.bean.User" p:id="3" p:name="王二">
@@ -15,7 +15,13 @@
         <constructor-arg value="李四"/>-->
     </bean>
 
-    <bean id="userDao" class="com.fch.dao.impl.UserDaoImpl"/>
-    <bean id="userService" class="com.fch.service.impl.UserServiceImpl"/>
-    <bean id="userServlet" class="com.fch.servlet.UserServlet"/>
+    <bean id="userDao" class="com.fch.dao.impl.UserDaoImpl">
+        <property name="user" ref="user"/>
+    </bean>
+    <bean id="userService" class="com.fch.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    <bean id="userServlet" class="com.fch.servlet.UserServlet">
+        <property name="userService" ref="userService"/>
+    </bean>
 </beans>
