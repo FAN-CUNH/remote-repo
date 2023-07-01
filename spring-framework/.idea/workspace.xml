@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9b7082a-9e0d-4c95-9701-8d232d4f3d9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/aspect/BaseAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/Name.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/convert/StringToNameConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/src/main/resources/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/src/test/java/com/fch/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/src/test/java/com/fch/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/target/classes/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/classes/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo/target/test-classes/com/fch/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/test-classes/com/fch/test/BaseTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Servlet" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.2\mav-repo" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2RrKFHmWKe62BZe38qMuVQPnis4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/spring-framework/spring-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "8115f58c82cc0c052bba68e4ab528935",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle Tasks" flag="true" />
+      <visibility group="Grunt" flag="true" />
+      <visibility group="Gulp" flag="true" />
+      <visibility group="HTTP Requests" flag="true" />
+      <visibility group="Maven Goals" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="com.intellij.httpClient.http.request.run.HttpRequestRunAnythingProvider" flag="true" />
+      <visibility group="com.intellij.ide.actions.runAnything.RunAnythingRunConfigurationProvider" flag="true" />
+      <visibility group="com.intellij.ide.actions.runAnything.activity.RunAnythingRecentProjectProvider" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.grunt.GruntRunAnythingProvider" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.gulp.GulpRunAnythingProvider" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Npm" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Yarn" flag="true" />
+      <visibility group="com.jetbrains.nodejs.execution.NodeRunAnythingProvider" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="org.jetbrains.idea.maven.execution.MavenRunAnythingProvider" flag="true" />
+      <visibility group="org.jetbrains.plugins.gradle.execution.GradleRunAnythingProvider" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
+  </component>
+  <component name="RunManager">
+    <configuration name="BaseTest.aspectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.test" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.test.BaseTest" />
+      <option name="METHOD_NAME" value="aspectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BaseTest.aspectTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9b7082a-9e0d-4c95-9701-8d232d4f3d9a" name="Changes" comment="" />
+      <created>1688002655141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688002655141</updated>
+      <workItem from="1688002656205" duration="15032000" />
+      <workItem from="1688086883778" duration="5731000" />
+      <workItem from="1688105987966" duration="7063000" />
+      <workItem from="1688186815713" duration="4423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

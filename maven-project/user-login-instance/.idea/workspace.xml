@@ -13,13 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e50290be-3e1d-4c92-b1dd-429aaef781cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../maven-mybatis/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-mybatis/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-mybatis/src/main/java/com/fch/mapper/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-mybatis/src/main/java/com/fch/mapper/BlogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-mybatis/src/main/resources/com/fch/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-mybatis/src/main/resources/com/fch/mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-mybatis/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-mybatis/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-mybatis/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-mybatis/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-framework/spring-demo/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-framework/spring-demo/src/main/resources/spring-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/maven-project/vue-admin-template&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/maven-project/user-login-instance&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,7 +106,14 @@
       <recent name="E:\IntelliJ-IDEA-Project\maven-project\maven-mybatis\src\main\resources\com\fch\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest.mybatis">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="js.build_tools.npm" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.28">
     <configuration name="Mybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fch.bean.test.Mybatis" />
       <module name="maven-mybatis" />
@@ -291,6 +293,8 @@
       <workItem from="1687741387808" duration="7546000" />
       <workItem from="1687755049893" duration="1870000" />
       <workItem from="1687790808571" duration="118000" />
+      <workItem from="1687862252873" duration="4049000" />
+      <workItem from="1688041229675" duration="23000" />
     </task>
     <servers />
   </component>

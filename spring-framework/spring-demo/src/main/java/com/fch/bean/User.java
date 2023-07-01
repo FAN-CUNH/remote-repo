@@ -1,6 +1,7 @@
 package com.fch.bean;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @packageName com.fch.bean
@@ -11,11 +12,8 @@ import lombok.Data;
  * @Version 1.0
  */
 @Data
+@NoArgsConstructor
 public class User {
     private String id;
     private String name;
-
-    public User() {
-        System.out.println("User is init...");
-    }
 }

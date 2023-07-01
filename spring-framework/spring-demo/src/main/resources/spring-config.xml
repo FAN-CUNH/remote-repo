@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:http="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 配置类型装换器 -->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <!-- 自定义的类型转换器 -->
+            <set>
+                <bean class="com.fch.convert.StringToNameConvert"/>
+            </set>
+        </property>
+    </bean>
+
+    <bean name="name" class="com.fch.bean.Name"/>
+
+    <bean id="person" class="com.fch.bean.Person">
+        <property name="age" value="18"/>
+        <property name="name" value="John-smith"/>
+    </bean>
 
     <!-- <bean id="user" name="user" class="com.fch.bean.User"> id 唯一标识 name 别名 -->
     <bean id="user" class="com.fch.bean.User" p:id="3" p:name="王二">
@@ -24,4 +43,20 @@
     <bean id="userServlet" class="com.fch.servlet.UserServlet">
         <property name="userService" ref="userService"/>
     </bean>
+
+    <!-- 注册一个base切面到容器 -->
+    <bean id="baseAspect" class="com.fch.aspect.BaseAspect"/>
+
+    <!-- aop 配置 -->
+    <aop:config>
+        <!-- 切面 -->
+        <aop:aspect ref="baseAspect">
+            <!-- 切入点 bean包下的所有方法 -->
+            <aop:pointcut id="p1" expression="execution(* com.fch.bean..*.*(..))"/>
+            <!-- 连接点 前置通知 -->
+            <aop:before method="before" pointcut-ref="p1"/>
+            <!-- 连接点 后置通知 -->
+            <aop:after method="after" pointcut-ref="p1"/>
+        </aop:aspect>
+    </aop:config>
 </beans>

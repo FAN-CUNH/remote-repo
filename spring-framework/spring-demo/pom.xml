@@ -57,7 +57,7 @@
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
         </dependency>
-        <!-- 单元测试 -->
+        <!-- junit 单元测试 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -81,6 +81,12 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+        </dependency>
+        <!-- aspect  -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version>
         </dependency>
     </dependencies>
 </project>
