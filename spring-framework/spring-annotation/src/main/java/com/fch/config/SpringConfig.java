@@ -2,6 +2,7 @@ package com.fch.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * @packageName com.fch.config
@@ -13,7 +14,8 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan(basePackages = "com.fch.pojo")
+@EnableAspectJAutoProxy
+@ComponentScan(basePackages = "com.fch")
 public class SpringConfig {
-    
+
 }

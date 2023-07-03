@@ -2,6 +2,7 @@ package com.fch.pojo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -23,5 +24,8 @@ public class Cat extends Animal{
     @Override
     public void say() {
         System.out.println("I am Cat.");
+    }
+    public void eat() {
+        System.out.println("eat");
     }
 }
