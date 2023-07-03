@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 我们需要对应mapper包中的接口对象 -->
+<mapper namespace="com.fch.mapper.CategoryMapper">
+    <select id="selectById" resultType="com.fch.pojo.Category">
+        select category_id, category_name from category where category_id = #{categoryId}
+    </select>
+</mapper>

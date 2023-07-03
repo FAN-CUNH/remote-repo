@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 我们需要对应mapper包中的接口对象 -->
+<mapper namespace="com.fch.mapper.ProductMapper">
+    <insert id="insert">
+        insert into product(product_name, product_price, category_id) VALUES (#{productName}, #{productPrice}, #{categoryId})
+    </insert>
+    <update id="update">
+        update product
+        set product_name  = #{productName},
+            product_price = #{productPrice},
+            category_id   = #{categoryId}
+        where product_id = #{productId}
+    </update>
+
+    <!-- 删除单个商品 -->
+    <delete id="deleteById">
+        delete
+        from product
+        where product_id = #{productId}
+    </delete>
+
+    <!-- 查询所有商品 -->
+    <select id="getPlist" resultMap="productMap">
+        select product_id, product_name, product_price, category_id
+        from product
+    </select>
+
+    <!-- 查询单个商品 -->
+    <select id="selectById" resultType="com.fch.pojo.Product">
+        select product_id, product_name, product_price, c.category_id, category_name
+        from product
+                 left join category c on product.category_id = c.category_id
+        where product_id = #{productId}
+    </select>
+
+    <!-- 获取所有商品种类 -->
+    <select id="getCategoryList" resultType="com.fch.pojo.Category">
+        select category_id, category_name from category
+    </select>
+    <resultMap id="productMap" type="com.fch.pojo.Product">
+        <association property="category" javaType="com.fch.pojo.Category" column="category_id" select="com.fch.mapper.CategoryMapper.selectById"/>
+    </resultMap>
+</mapper>

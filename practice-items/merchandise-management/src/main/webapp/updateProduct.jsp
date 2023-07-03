@@ -1,0 +1,38 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:useBean id="product" scope="request" type="com.fch.pojo.Product"/>
+<%--
+  Created by IntelliJ IDEA.
+  User: 58238
+  Date: 2023/7/2
+  Time: 13:20
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" isELIgnored="false" language="java" %>
+<html>
+<head>
+    <title>更新商品页面</title>
+</head>
+<body>
+<form action="addProduct.action" method="post">
+  <label>
+    <input name="productId" type="text" readonly value="${product.productId}">
+  </label>
+  <label>
+    <input type="text" name="productName" placeholder="请输入商品名称" value="${product.productName}">
+  </label>
+  <label>
+    <input type="text" name="productPrice" placeholder="请输入商品价格" value="${product.productPrice}">
+  </label>
+  <label>
+    <select name="categoryId">
+      <jsp:useBean id="categories" scope="request" type="java.util.List"/>
+      <c:forEach items="${categories}" var="category">
+        <option value="${category.categoryId}" <c:if test="${category.categoryId==product.category.categoryId}">selected</c:if>>${category.categoryName}</option>
+      </c:forEach>
+    </select>
+    <input type="submit" value="保存">
+    <input type="button" value="返回" onclick="history.back()">
+  </label>
+</form>
+</body>
+</html>

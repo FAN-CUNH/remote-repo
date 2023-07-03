@@ -8,19 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b7082a-9e0d-4c95-9701-8d232d4f3d9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/aspect/BaseAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/Name.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/convert/StringToNameConvert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/src/main/java/com/fch/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/src/main/resources/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/test/java/com/fch/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/src/test/java/com/fch/test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/bean/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/classes/com/fch/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/target/classes/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/classes/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/target/test-classes/com/fch/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo/target/test-classes/com/fch/test/BaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +136,7 @@
       <workItem from="1688002656205" duration="15032000" />
       <workItem from="1688086883778" duration="5731000" />
       <workItem from="1688105987966" duration="7063000" />
-      <workItem from="1688186815713" duration="4423000" />
+      <workItem from="1688186815713" duration="4841000" />
     </task>
     <servers />
   </component>
