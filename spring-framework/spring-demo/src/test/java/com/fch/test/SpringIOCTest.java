@@ -14,7 +14,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Version 1.0
  */
 public class SpringIOCTest {
-
     @Test
     public void springIOC() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
