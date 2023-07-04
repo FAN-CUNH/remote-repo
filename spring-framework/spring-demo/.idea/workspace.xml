@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45039aee-fc47-4657-aef7-f68bc2f5d418" name="Changes" comment="main:8">
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/aspect/BaseAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/JDBCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/test/java/com/fch/service/AccountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice-items/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/aspect/BaseAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/aspect/BaseAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Person.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.2\mav-repo" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectId" id="2S2Z26chWa8iP2b33UtUjBeydMn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/practice-items",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "spring.configuration.checksum": "15ede1470d0bb2fb02bb3f507b6a473e",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\spring-framework\spring-annotation\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AnnotationTest.annotationTest">
+    <configuration name="AnnotationTest.annotationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.AnnotationTest" />
+      <option name="METHOD_NAME" value="annotationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringIOCTest.springIOC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.test" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.test.SpringIOCTest" />
+      <option name="METHOD_NAME" value="springIOC" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AnnotationTest.annotationTest" />
+        <item itemvalue="JUnit.SpringIOCTest.springIOC" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45039aee-fc47-4657-aef7-f68bc2f5d418" name="Changes" comment="" />
+      <created>1688346427558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688346427558</updated>
+      <workItem from="1688346428841" duration="2774000" />
+      <workItem from="1688359862458" duration="8054000" />
+      <workItem from="1688370675932" duration="13984000" />
+    </task>
+    <task id="LOCAL-00001" summary="main:8">
+      <created>1688373245057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688373245057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="main:8">
+      <created>1688373271057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688373271058</updated>
+    </task>
+    <task id="LOCAL-00003" summary="main:8">
+      <created>1688378306569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688378306569</updated>
+    </task>
+    <task id="LOCAL-00004" summary="main:8">
+      <created>1688378314155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688378314155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main:8" />
+    <option name="LAST_COMMIT_MESSAGE" value="main:8" />
+  </component>
+</project>

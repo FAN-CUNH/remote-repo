@@ -10,7 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a43dfe4-0912-448b-ac6c-86ec3e94262a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/aspect/BaseAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/config/JDBCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface-run-speed/src/test/java/com/fch/service/AccountServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/aspect/BaseAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/aspect/BaseAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-annotation/src/main/java/com/fch/pojo/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +38,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Filter" />
-        <option value="Class" />
         <option value="Servlet" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,39 +84,102 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/practice-items/merchandise-management/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6d146170072f77955782eda8cc6d6c6b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/practice-items",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "6d146170072f77955782eda8cc6d6c6b",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IntelliJ-IDEA-Project\practice-items\merchandise-management\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.testGetDataSource">
+    <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interface-run-speed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.service.AccountServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interface-run-speed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interface-run-speed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testGetDataSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interface-run-speed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.service.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testGetDataSource" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.28" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -186,6 +267,14 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountServiceTest.testGetDataSource" />
+        <item itemvalue="JUnit.AccountServiceTest" />
+        <item itemvalue="JUnit.AccountServiceTest.testFindAll" />
+        <item itemvalue="JUnit.AccountServiceTest.testFindById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -201,6 +290,8 @@
       <workItem from="1688299736938" duration="879000" />
       <workItem from="1688300993601" duration="1139000" />
       <workItem from="1688302153211" duration="25000" />
+      <workItem from="1688346259296" duration="169000" />
+      <workItem from="1688385077268" duration="10867000" />
     </task>
     <servers />
   </component>

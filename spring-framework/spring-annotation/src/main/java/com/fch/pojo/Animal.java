@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @packageName com.fch.pojo
  * @ClassName Animal
- * @Description TODO
+ * @Description 动物模版类
  * @Author Fan-CUNH
  * @Date 2023/7/3 14:49
  * @Version 1.0

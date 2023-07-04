@@ -2,7 +2,6 @@ package com.fch.pojo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -19,12 +18,19 @@ import org.springframework.stereotype.Component;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Component
-@Primary
+@Primary // 表示自动注入时，优先注入此对象
 public class Cat extends Animal{
+    /**
+     * 重写父类的方法
+     */
     @Override
     public void say() {
         System.out.println("I am Cat.");
     }
+
+    /**
+     * 自己的私有方法
+     */
     public void eat() {
         System.out.println("eat");
     }
