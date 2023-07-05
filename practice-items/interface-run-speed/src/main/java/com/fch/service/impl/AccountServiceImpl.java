@@ -6,6 +6,7 @@ import com.fch.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ import java.util.List;
 
 @Service
 public class AccountServiceImpl implements AccountService {
-    @Autowired
+    @Resource
     private AccountMapper accountMapper;
     @Override
     public Account findById(Integer id) {

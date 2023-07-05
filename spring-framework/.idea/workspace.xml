@@ -8,7 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b7082a-9e0d-4c95-9701-8d232d4f3d9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/utils/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/resources/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/resources/spring-mvc-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/interface-run-speed/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/interface-run-speed/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +83,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/spring-framework/spring-demo",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/spring-framework/spring-mvc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,6 +156,7 @@
       <workItem from="1688086883778" duration="5731000" />
       <workItem from="1688105987966" duration="7063000" />
       <workItem from="1688186815713" duration="4841000" />
+      <workItem from="1688476881622" duration="28000" />
     </task>
     <servers />
   </component>

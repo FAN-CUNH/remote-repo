@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-annotation" />
         <module name="spring-demo" />
+        <module name="spring-mvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

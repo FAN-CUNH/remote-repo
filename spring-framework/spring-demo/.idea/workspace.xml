@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-mvc:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45039aee-fc47-4657-aef7-f68bc2f5d418" name="Changes" comment="main:8">
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/aspect/BaseAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/JDBCConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/mapper/AccountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/pojo/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/test/java/com/fch/service/AccountServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/java/com/fch/utils/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/resources/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/resources/spring-mvc-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice-items/student-management/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice-items/interface-run-speed/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice-items/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/aspect/BaseAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/aspect/BaseAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/src/main/java/com/fch/pojo/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +41,20 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="Jspx File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -78,12 +93,13 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.25977013",
     "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "spring.configuration.checksum": "15ede1470d0bb2fb02bb3f507b6a473e",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "4f51d2f6aefa6440599b214adb86a321",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -97,47 +113,99 @@
       <recent name="E:\IntelliJ-IDEA-Project\spring-framework\spring-annotation\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnnotationTest.annotationTest">
-    <configuration name="AnnotationTest.annotationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-annotation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fch" />
-      <option name="MAIN_CLASS_NAME" value="com.fch.AnnotationTest" />
-      <option name="METHOD_NAME" value="annotationTest" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.28" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-mvc:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/spring_mvc" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="6fde0fb1-6102-4369-890b-477173c23200" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53671" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-mvc:war exploded" />
+        </option>
       </method>
     </configuration>
-    <configuration name="SpringIOCTest.springIOC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fch.test" />
-      <option name="MAIN_CLASS_NAME" value="com.fch.test.SpringIOCTest" />
-      <option name="METHOD_NAME" value="springIOC" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.AnnotationTest.annotationTest" />
-        <item itemvalue="JUnit.SpringIOCTest.springIOC" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\58238\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="45039aee-fc47-4657-aef7-f68bc2f5d418" name="Changes" comment="" />
@@ -148,6 +216,9 @@
       <workItem from="1688346428841" duration="2774000" />
       <workItem from="1688359862458" duration="8054000" />
       <workItem from="1688370675932" duration="13984000" />
+      <workItem from="1688432393857" duration="11531000" />
+      <workItem from="1688449740018" duration="2065000" />
+      <workItem from="1688451826175" duration="8981000" />
     </task>
     <task id="LOCAL-00001" summary="main:8">
       <created>1688373245057</created>
@@ -183,8 +254,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main:8" />
     <option name="LAST_COMMIT_MESSAGE" value="main:8" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-annotation.iml" filepath="$PROJECT_DIR$/spring-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo.iml" filepath="$PROJECT_DIR$/spring-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc.iml" />
     </modules>
   </component>
 </project>
