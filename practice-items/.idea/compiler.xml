@@ -10,6 +10,7 @@
         <module name="interface-run-speed" />
         <module name="student-management" />
         <module name="merchandise-management" />
+        <module name="book-management-ssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

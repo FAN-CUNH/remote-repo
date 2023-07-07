@@ -992,124 +992,156 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="287" parent="281" name="category">
+    <table id="287" parent="281" name="book">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="288" parent="281" name="product">
+    <table id="288" parent="281" name="category">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="289" parent="281" name="student">
+    <table id="289" parent="281" name="product">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="290" parent="286" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="291" parent="286" name="name">
-      <DasType>varchar(50)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="292" parent="286" name="money">
-      <DasType>double|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <index id="293" parent="286" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="294" parent="286" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="295" parent="287" name="category_id">
+    <table id="290" parent="281" name="student">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <column id="291" parent="286" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="296" parent="287" name="category_name">
+    <column id="292" parent="286" name="name">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="297" parent="287" name="PRIMARY">
-      <ColNames>category_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="298" parent="287" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="299" parent="288" name="product_id">
-      <AutoIncrement>13</AutoIncrement>
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="300" parent="288" name="product_name">
-      <DasType>varchar(50)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="301" parent="288" name="product_price">
+    <column id="293" parent="286" name="money">
       <DasType>double|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="302" parent="288" name="category_id">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <foreign-key id="303" parent="288" name="product_category_category_id_fk">
-      <ColNames>category_id</ColNames>
-      <RefColNames>category_id</RefColNames>
-      <RefTableName>category</RefTableName>
-    </foreign-key>
-    <index id="304" parent="288" name="PRIMARY">
-      <ColNames>product_id</ColNames>
+    <index id="294" parent="286" name="PRIMARY">
+      <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="305" parent="288" name="product_category_category_id_fk">
-      <ColNames>category_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="306" parent="288" name="PRIMARY">
+    <key id="295" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="307" parent="289" name="stu_id">
+    <column id="296" parent="287" name="book_id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="308" parent="289" name="stu_name">
+    <column id="297" parent="287" name="book_name">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="309" parent="289" name="stu_age">
-      <DasType>int|0s</DasType>
+    <column id="298" parent="287" name="book_type">
+      <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="310" parent="289" name="address">
+    <column id="299" parent="287" name="description">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
+    <index id="300" parent="287" name="PRIMARY">
+      <ColNames>book_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="301" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="302" parent="288" name="category_id">
+      <AutoIncrement>3</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="303" parent="288" name="category_name">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="304" parent="288" name="PRIMARY">
+      <ColNames>category_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="305" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="306" parent="289" name="product_id">
+      <AutoIncrement>13</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="307" parent="289" name="product_name">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="308" parent="289" name="product_price">
+      <DasType>double|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="309" parent="289" name="category_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="310" parent="289" name="product_category_category_id_fk">
+      <ColNames>category_id</ColNames>
+      <RefColNames>category_id</RefColNames>
+      <RefTableName>category</RefTableName>
+    </foreign-key>
     <index id="311" parent="289" name="PRIMARY">
+      <ColNames>product_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="312" parent="289" name="product_category_category_id_fk">
+      <ColNames>category_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="313" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="314" parent="290" name="stu_id">
+      <AutoIncrement>6</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="315" parent="290" name="stu_name">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="316" parent="290" name="stu_age">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="317" parent="290" name="address">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="318" parent="290" name="PRIMARY">
       <ColNames>stu_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="312" parent="289" name="PRIMARY">
+    <key id="319" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

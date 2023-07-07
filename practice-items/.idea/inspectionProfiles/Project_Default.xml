@@ -66,10 +66,20 @@
     <inspection_tool class="AutoCloseableResource" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="METHOD_MATCHER_CONFIG" value="java.util.Formatter,format,java.io.Writer,append,com.google.common.base.Preconditions,checkNotNull,org.hibernate.Session,close,java.io.PrintWriter,printf,java.io.PrintStream,printf,org.apache.ibatis.io.Resources,getResourceAsStream" />
     </inspection_tool>
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="slot-scope" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="7">
+          <list size="16">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -77,6 +87,15 @@
             <item index="4" class="java.lang.String" itemvalue="embed" />
             <item index="5" class="java.lang.String" itemvalue="script" />
             <item index="6" class="java.lang.String" itemvalue="c" />
+            <item index="7" class="java.lang.String" itemvalue="el-input" />
+            <item index="8" class="java.lang.String" itemvalue="el-button" />
+            <item index="9" class="java.lang.String" itemvalue="el-table-column" />
+            <item index="10" class="java.lang.String" itemvalue="el-table" />
+            <item index="11" class="java.lang.String" itemvalue="el-dialog" />
+            <item index="12" class="java.lang.String" itemvalue="el-form" />
+            <item index="13" class="java.lang.String" itemvalue="el-row" />
+            <item index="14" class="java.lang.String" itemvalue="el-col" />
+            <item index="15" class="java.lang.String" itemvalue="el-form-item" />
           </list>
         </value>
       </option>

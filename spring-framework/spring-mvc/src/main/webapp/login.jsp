@@ -11,7 +11,7 @@
     <title>登录页面</title>
 </head>
 <body>
-<form action="login.action" method="post">
+<form action="login" method="post">
     <label>
         <input type="text" name="username">
     </label>

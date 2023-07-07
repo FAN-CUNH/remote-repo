@@ -3,31 +3,41 @@
   <component name="AnalysisUIOptions">
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-mvc:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b7082a-9e0d-4c95-9701-8d232d4f3d9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/java/com/fch/utils/DBUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/resources/spring-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/resources/spring-mvc-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/student-management/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/JdbcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/test/java/com/fch/BookServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/static/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/upload.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice-items/interface-run-speed/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/interface-run-speed/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/interface-run-speed/src/main/java/com/fch/service/impl/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/fch/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/fch/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-mvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-mvc-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +50,23 @@
         <option value="Servlet" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -83,17 +105,18 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/spring-framework/spring-mvc",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/practice-items",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "8115f58c82cc0c052bba68e4ab528935",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "f7da7726fd52d9bec52839b645feaa29",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -122,27 +145,93 @@
     </myKeys>
   </component>
   <component name="RunManager">
-    <configuration name="BaseTest.aspectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fch.test" />
-      <option name="MAIN_CLASS_NAME" value="com.fch.test.BaseTest" />
-      <option name="METHOD_NAME" value="aspectTest" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="Tomcat 8.5.28" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-mvc:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/spring_mvc_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="d1abd8ed-ae17-4d4b-b79d-6c79797508c4" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54003" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-mvc:war exploded" />
+        </option>
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.BaseTest.aspectTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -157,6 +246,8 @@
       <workItem from="1688105987966" duration="7063000" />
       <workItem from="1688186815713" duration="4841000" />
       <workItem from="1688476881622" duration="28000" />
+      <workItem from="1688522802105" duration="13016000" />
+      <workItem from="1688552485661" duration="2179000" />
     </task>
     <servers />
   </component>
