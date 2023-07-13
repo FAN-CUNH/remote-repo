@@ -1,11 +1,13 @@
 package com.fch.config;
 
+import com.github.pagehelper.PageInterceptor;
 import org.apache.ibatis.session.Configuration;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.context.annotation.Bean;
 
 import javax.sql.DataSource;
+import java.util.Properties;
 
 /**
  * @packageName com.fch.config
@@ -29,6 +31,20 @@ public class MybatisConfig {
         Configuration configuration=new Configuration();
         configuration.setMapUnderscoreToCamelCase(true);
         sqlSessionFactoryBean.setConfiguration(configuration);
+
+        // 分页插件
+        PageInterceptor pageInterceptor = new PageInterceptor();
+        Properties properties = new Properties();
+        // 指定数据库方言
+        properties.put("helperDialect", "mysql");
+        // 分页合理化
+        properties.put("reasonable", "true");
+
+        // 配置分页参数
+        pageInterceptor.setProperties(properties);
+        // 会话工厂，设置分页插件
+        sqlSessionFactoryBean.setPlugins(pageInterceptor);
+
         return sqlSessionFactoryBean;
     }
 

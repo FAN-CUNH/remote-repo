@@ -13,6 +13,9 @@
         <module name="book-management-ssm" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="mybatis-generator" target="11" />
+      <module name="spring-mvc" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

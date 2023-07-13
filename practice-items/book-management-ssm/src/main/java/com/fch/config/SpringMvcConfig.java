@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 /**
  * @packageName com.fch.config
  * @ClassName SpringMvcConfig
- * @Description TODO
+ * @Description spring mvc 配置类
  * @Author Fan-CUNH
  * @Date 2023/7/5 19:32
  * @Version 1.0

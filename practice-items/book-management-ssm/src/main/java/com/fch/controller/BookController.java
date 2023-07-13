@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -75,8 +76,12 @@ public class BookController {
     @GetMapping("/{bookId}")
     public Result getBook(@PathVariable Integer bookId) {
         log.info("查询参数：bookId = " + bookId);
+        List<Book> books = new ArrayList<>(16);
         Book book = bookService.getBook(bookId);
-        return new Result(book != null ? Code.GET_OK : Code.GET_ERR, book, book != null ? "查询成功" : "查询失败");
+        if (book != null) {
+            books.add(book);
+        }
+        return new Result(book != null ? Code.GET_OK : Code.GET_ERR, books, book != null ? "查询成功" : "查询失败");
     }
 
     /**

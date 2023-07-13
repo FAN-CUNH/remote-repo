@@ -13,31 +13,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b7082a-9e0d-4c95-9701-8d232d4f3d9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/JdbcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/test/java/com/fch/BookServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/static/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/upload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/resources/dubbo-consumer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/java/com/fch/config/DubboProviderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/java/com/fch/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/resources/dubbo-provider.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_interface_provider/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/book-management-ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/webapp/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/book-management-ssm/src/main/webapp/pages/books.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice-items/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/fch/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/fch/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-mvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/spring-mvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +109,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/practice-items",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/spring-framework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -248,6 +252,7 @@
       <workItem from="1688476881622" duration="28000" />
       <workItem from="1688522802105" duration="13016000" />
       <workItem from="1688552485661" duration="2179000" />
+      <workItem from="1688815326430" duration="59000" />
     </task>
     <servers />
   </component>

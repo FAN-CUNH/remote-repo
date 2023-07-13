@@ -3,6 +3,7 @@ package com.fch.service.impl;
 import com.fch.dao.BookDao;
 import com.fch.domain.Book;
 import com.fch.service.BookService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

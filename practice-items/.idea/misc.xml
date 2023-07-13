@@ -5,7 +5,19 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/book-management-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/interface-run-speed/pom.xml" />
+        <option value="$PROJECT_DIR$/merchandise-management/pom.xml" />
+        <option value="$PROJECT_DIR$/student-management/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../mybatis-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-mvc/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">

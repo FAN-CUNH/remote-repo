@@ -10,56 +10,184 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a43dfe4-0912-448b-ac6c-86ec3e94262a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/JdbcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/SpringMvcSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/ExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/interceptor/BaseInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/exception/SystemException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/js/axios-0.18.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/pages/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/elementui/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/elementui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-management-ssm/src/test/java/com/fch/BookServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/resources/static/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/upload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/BackendConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/SpringMVCSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/CheckGroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/CheckItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/interceptor/BaseInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/resources/dubbo-consumer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/resources/redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/css/orderset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/loginLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/logingBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/minilogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/pwd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/img/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/checkgroup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/checkitem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/setmeal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/java/com/fch/config/QuartzConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/java/com/fch/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/java/com/fch/task/CleanImgTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/resources/redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/cleanup_task/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/code/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/constant/Msg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Checkgroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/CheckgroupCheckitemExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/CheckgroupCheckitemKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/CheckgroupExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Checkitem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/CheckitemExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/MemberExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/MenuExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/OrdersExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Ordersetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/OrdersettingExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/PermissionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/RoleExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/RoleMenuExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/RoleMenuKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/RolePermissionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/RolePermissionKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Setmeal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/SetmealCheckgroupExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/SetmealCheckgroupKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/SetmealExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/UserExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/dto/PageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/exception/SystemException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/result/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/utils/QiNiuUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/CheckGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/CheckItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/SetmealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/DubboProviderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/CheckgroupCheckitemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/CheckgroupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/CheckitemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/OrdersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/OrdersettingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/RoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/RolePermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/SetmealCheckgroupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/SetmealMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/CheckGroupServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/CheckItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/SetmealServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/CheckgroupCheckitemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/CheckgroupMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/CheckitemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/OrdersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/OrdersettingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/RoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/RolePermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/SetmealCheckgroupMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/SetmealMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/com/fch/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/dubbo-provider.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/resources/redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/interceptor/BaseInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/controller/interceptor/BaseInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-management-ssm/src/main/webapp/pages/books.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/java/com/fch/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/java/com/fch/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/resources/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/resources/spring-mvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/resources/spring-mvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-mvc/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +224,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\apache-maven-3.6.2\mav-repo" />
         <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -124,17 +253,18 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/practice-items/book-management-ssm/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/practice-items&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4289b542473a666118a549b273a13b57&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3283454fc4fef325408ba4e4476027a6&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -162,16 +292,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.book-management-ssm">
-    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="book-management-ssm" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -199,13 +320,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.All in generated-requests" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -237,7 +351,24 @@
       <workItem from="1688697173875" duration="319000" />
       <workItem from="1688698087593" duration="366000" />
       <workItem from="1688698465957" duration="639000" />
-      <workItem from="1688704781281" duration="5229000" />
+      <workItem from="1688704781281" duration="14475000" />
+      <workItem from="1688791976196" duration="1788000" />
+      <workItem from="1688793792566" duration="370000" />
+      <workItem from="1688802108136" duration="32000" />
+      <workItem from="1688815296026" duration="32000" />
+      <workItem from="1688815907972" duration="37000" />
+      <workItem from="1688818746785" duration="1490000" />
+      <workItem from="1688874587368" duration="599000" />
+      <workItem from="1688950787678" duration="36000" />
+      <workItem from="1688959316547" duration="2139000" />
+      <workItem from="1688976781529" duration="19000" />
+      <workItem from="1688992700497" duration="10000" />
+      <workItem from="1688992727929" duration="606000" />
+      <workItem from="1689059950291" duration="483000" />
+      <workItem from="1689124470672" duration="32000" />
+      <workItem from="1689124617095" duration="101000" />
+      <workItem from="1689176772986" duration="46000" />
+      <workItem from="1689176906793" duration="12000" />
     </task>
     <servers />
   </component>
