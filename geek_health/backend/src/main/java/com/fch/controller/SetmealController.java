@@ -18,6 +18,7 @@ import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -109,5 +110,51 @@ public class SetmealController {
         Setmeal setmeal = setmealService.getSetmealById(id);
         log.info("通过id获取套餐基本信息 结果:{}", setmeal);
         return new Result(setmeal != null ? Code.GET_OK: Code.GET_ERR, setmeal != null ? Msg.QUERY_SETMEAL_SUCCESS : Msg.QUERY_SETMEAL_FAIL, setmeal);
+    }
+
+    /**
+     * 通过套餐id查询检查组id集合
+     *
+     * @param id 套餐id
+     * @return 返回与套餐关联的检查组id集合
+     */
+    @GetMapping("getCheckGroupBySetmealId/{id}")
+    public Result getCheckGroupBySetmealId(@PathVariable("id") Integer id) {
+        log.info("获取套餐中的检查组 参数：{}", id);
+        List<Integer> checkGroupIds = setmealService.getCheckGroupBySetmealId(id);
+        log.info("获取套餐中的检查组 结果：{}", checkGroupIds);
+        if (checkGroupIds != null && checkGroupIds.size() > 0) {
+            return new Result(Code.GET_OK, Msg.QUERY_CHECKGROUP_SUCCESS, checkGroupIds);
+        }
+        return new Result(Code.GET_ERR, Msg.QUERY_CHECKGROUP_FAIL);
+    }
+
+    /**
+     * 更新套餐信息
+     *
+     * @param setmeal 套餐信息载体
+     * @param checkGroupIds 与套餐关联的检查组id
+     * @return 返回统一响应结果
+     */
+    @PutMapping("update")
+    public Result update(@RequestBody Setmeal setmeal, @RequestParam("checkGroupIds") Integer[] checkGroupIds) {
+        log.info("更新套餐 参数：{}, {}", setmeal, checkGroupIds);
+        boolean flag = setmealService.update(setmeal, checkGroupIds);
+        log.info("更新套餐 状态：{}", flag);
+        return new Result(flag?Code.UPDATE_OK:Code.UPDATE_ERR, flag?Msg.EDIT_SETMEAL_SUCCESS:Msg.EDIT_SETMEAL_FAIL);
+    }
+
+    /**
+     * 通过套餐ID删除套餐
+     *
+     * @param id 套餐id
+     * @return 返回统一响应结果
+     */
+    @DeleteMapping("{id}")
+    public Result deleteSetmealById(@PathVariable("id") Integer id) {
+        log.info("通过套餐id删除套餐 参数：{}", id);
+        boolean flag = setmealService.deleteSetmealById(id);
+        log.info("通过套餐id删除套餐 状态：{}", flag);
+        return new Result(flag ? Code.DELETE_OK : Code.DELETE_ERR, flag ? Msg.DELETE_SETMEAL_SUCCESS : Msg.DELETE_SETMEAL_FAIL);
     }
 }

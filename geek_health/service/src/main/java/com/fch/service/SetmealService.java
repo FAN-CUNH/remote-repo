@@ -5,6 +5,8 @@ import com.fch.domain.Setmeal;
 import com.fch.dto.PageDTO;
 import com.fch.result.PageResult;
 
+import java.util.List;
+
 /**
  * @packageName com.fch.service
  * @ClassName SetmealService
@@ -38,4 +40,29 @@ public interface SetmealService {
      * @return 套餐对象
      */
     Setmeal getSetmealById(Integer id);
+
+    /**
+     * 通过套餐id查询检查组id集合
+     *
+     * @param id 套餐id
+     * @return 返回与套餐关联的检查组id集合
+     */
+    List<Integer> getCheckGroupBySetmealId(Integer id);
+
+    /**
+     * 更新套餐信息
+     *
+     * @param setmeal 套餐信息载体
+     * @param checkGroupIds 与套餐关联的检查组id数组
+     * @return 返回更新的状态
+     */
+    boolean update(Setmeal setmeal, Integer[] checkGroupIds);
+
+    /**
+     * 通过套餐ID删除套餐
+     *
+     * @param id 套餐id
+     * @return 返回删除状态
+     */
+    boolean deleteSetmealById(Integer id);
 }

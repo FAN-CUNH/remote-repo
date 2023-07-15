@@ -37,6 +37,7 @@ public class SpringMVCSupport extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/img/**").addResourceLocations("/img/");
         registry.addResourceHandler("/js/**").addResourceLocations("/js/");
         registry.addResourceHandler("/plugins/**").addResourceLocations("/plugins/");
+        registry.addResourceHandler("/template/**").addResourceLocations("/template/");
     }
 
     /**

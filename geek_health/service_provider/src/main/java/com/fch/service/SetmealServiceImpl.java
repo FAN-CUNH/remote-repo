@@ -3,12 +3,14 @@ package com.fch.service;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.fch.constant.RedisConstant;
 import com.fch.domain.Setmeal;
+import com.fch.domain.SetmealCheckgroupExample;
 import com.fch.domain.SetmealCheckgroupKey;
 import com.fch.domain.SetmealExample;
 import com.fch.dto.PageDTO;
 import com.fch.mapper.SetmealCheckgroupMapper;
 import com.fch.mapper.SetmealMapper;
 import com.fch.result.PageResult;
+import com.fch.utils.QiNiuUtil;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +18,7 @@ import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -100,5 +103,83 @@ public class SetmealServiceImpl implements SetmealService {
     @Override
     public Setmeal getSetmealById(Integer id) {
         return setmealMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 通过套餐id查询检查组id集合
+     *
+     * @param id 套餐id
+     * @return 返回与套餐关联的检查组id集合
+     */
+    @Override
+    public List<Integer> getCheckGroupBySetmealId(Integer id) {
+        // 封装查询条件
+        SetmealCheckgroupExample setmealCheckgroupExample = new SetmealCheckgroupExample();
+        SetmealCheckgroupExample.Criteria setmealCheckgroupExampleCriteria = setmealCheckgroupExample.createCriteria();
+        setmealCheckgroupExampleCriteria.andSetmealIdEqualTo(id);
+
+        // 查询
+        List<SetmealCheckgroupKey> setmealCheckgroupKeys = setmealCheckgroupMapper.selectByExample(setmealCheckgroupExample);
+
+        return setmealCheckgroupKeys.stream().map(SetmealCheckgroupKey::getCheckgroupId).collect(Collectors.toList());
+    }
+
+    /**
+     * 更新套餐信息
+     *
+     * @param setmeal       套餐信息载体
+     * @param checkGroupIds 与套餐关联的检查组id数组
+     * @return 返回更新的状态
+     */
+    @Override
+    public boolean update(Setmeal setmeal, Integer[] checkGroupIds) {
+        // 添加图片至redis
+        jedisPool.getResource().sadd(RedisConstant.SETMEAL_PIC_DB_RESOURCES, setmeal.getImg());
+
+        // 删除套餐与关联的检查组中间表数据
+        SetmealCheckgroupExample setmealCheckgroupExample = new SetmealCheckgroupExample();
+        SetmealCheckgroupExample.Criteria setmealCheckgroupExampleCriteria = setmealCheckgroupExample.createCriteria();
+        setmealCheckgroupExampleCriteria.andSetmealIdEqualTo(setmeal.getId());
+        setmealCheckgroupMapper.deleteByExample(setmealCheckgroupExample);
+
+        // 建立新的套餐与检查组之间的关系
+        if (checkGroupIds != null && checkGroupIds.length > 0) {
+            Stream.of(checkGroupIds).forEach(c -> {
+                SetmealCheckgroupKey setmealCheckgroupKey = new SetmealCheckgroupKey();
+                setmealCheckgroupKey.setSetmealId(setmeal.getId());
+                setmealCheckgroupKey.setCheckgroupId(c);
+                setmealCheckgroupMapper.insertSelective(setmealCheckgroupKey);
+            });
+        }
+
+        // 更新
+        return setmealMapper.updateByPrimaryKeySelective(setmeal) > 0;
+    }
+
+    /**
+     * 通过套餐ID删除套餐
+     *
+     * @param id 套餐id
+     * @return 返回删除状态
+     */
+    @Override
+    public boolean deleteSetmealById(Integer id) {
+        // 先删除关系表
+        SetmealCheckgroupExample setmealCheckgroupExample = new SetmealCheckgroupExample();
+        SetmealCheckgroupExample.Criteria setmealCheckgroupExampleCriteria = setmealCheckgroupExample.createCriteria();
+        setmealCheckgroupExampleCriteria.andSetmealIdEqualTo(id);
+        setmealCheckgroupMapper.deleteByExample(setmealCheckgroupExample);
+
+        // 通过id查询图片名称
+        Setmeal setmeal = setmealMapper.selectByPrimaryKey(id);
+
+        // 删除存储在redis和七牛云中的图片
+        if (setmeal.getImg() != null && setmeal.getImg().length() > 0) {
+            QiNiuUtil.deleteFromQiNiu(setmeal.getImg());
+            jedisPool.getResource().srem(RedisConstant.SETMEAL_PIC_DB_RESOURCES, setmeal.getImg());
+        }
+
+        // 再删主表
+        return setmealMapper.deleteByPrimaryKey(id) > 0;
     }
 }

@@ -36,8 +36,7 @@
         }
 
         .avatar {
-            width: 178px;
-            height: 178px;
+            width: 120px;
             display: block;
         }
 
@@ -443,8 +442,6 @@
             },
             // 重置表单
             resetForm() {
-                // 打开弹层
-                this.dialogFormVisible = true;
                 // 清空表单
                 this.formData = {}
                 // 默认显示基本信息页面
@@ -452,7 +449,7 @@
                 // 清空图片
                 this.imageUrl = null
                 // 清空已勾选检查项数组
-                this.checkitemIds = []
+                this.checkgroupIds = []
             },
             //添加
             handleAdd() {
@@ -477,12 +474,13 @@
             handleCreate() {
                 // 重置表单
                 this.resetForm()
+                // 打开弹层
+                this.dialogFormVisible = true;
                 // 发送axios请求 获取所有的检查组列表
                 axios.get(`/checkgroup/getAll`)
                     .then(res => {
                         if (res.data.code === 20041) {
                             this.tableData = res.data.data
-                            this.imageUrl = "http://rxmbmvfs1.hd-bkt.clouddn.com/" + res.data.data.img
                         } else {
                             this.$message.error(res.data.msg)
                         }
@@ -493,27 +491,67 @@
             handleUpdate(row) {
                 // 重置表单
                 this.resetForm()
+                this.dialogFormVisible4Edit = true
                 // 发送axios请求，获取当前套餐已选的检查组信息
                 axios.get(`/setmeal/${row.id}`)
                     .then(res => {
                         if (res.data.code === 20041) {
                             this.formData = res.data.data
+                            this.imageUrl = "http://rxmbmvfs1.hd-bkt.clouddn.com/" + res.data.data.img
+
+                            // 发送axios请求，获取所有的检查组
+                            axios.get(`/checkgroup/getAll`).then(res => {
+                                if (res.data.code === 20041) {
+                                    this.tableData = res.data.data
+
+                                    // 发送axios请求，获取套餐中的检查组信息
+                                    axios.get(`/setmeal/getCheckGroupBySetmealId/${row.id}`)
+                                        .then(res => {
+                                            if (res.data.code === 20041) {
+                                                this.checkgroupIds = res.data.data
+                                            } else {
+                                                this.$message.error(res.data.msg)
+                                            }
+                                        })
+                                } else {
+                                    this.$message.error(res.data.msg)
+                                }
+                            })
                         } else {
                             this.$message.error(res.data.msg)
                         }
                     })
-                // 显示弹层
-                this.dialogFormVisible4Edit = true
             },
 
             // 编辑
             handleEdit() {
-
+                // 关闭弹层 发送axios请求 查询所有套餐
+                this.dialogFormVisible4Edit = false
+                axios.put(`/setmeal/update?checkGroupIds=${this.checkgroupIds}`, this.formData)
+                    .then(res => {
+                        if (res.data.code === 20031) {
+                            this.$message.success(res.data.msg)
+                            this.findPage()
+                        } else {
+                            this.$message.error(res.data.msg)
+                        }
+                    })
             },
 
             // 删除
             handleDelete(row) {
+                // 发送删除当前行axios请求 查询所有套餐
+                axios.delete(`/setmeal/${row.id}`)
+                    .then(res => {
+                        if (res.data.code === 20021) {
+                            this.$message.success(res.data.msg)
 
+                            // 查询所有套餐列表
+                            this.findPage()
+                        } else {
+                            this.$message.error(res.data.msg)
+                        }
+                    })
             },
         }
     })

@@ -1,15 +1,27 @@
 package com.fch.domain;
 
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@ToString
 public class Ordersetting implements Serializable {
     private Integer id;
 
+    /**
+     * 预约数量
+     */
     private Date orderDate;
 
+    /**
+     * 可预约数量
+     */
     private Integer number;
 
+    /**
+     * 已预约数量
+     */
     private Integer reservations;
 
     public Integer getId() {
@@ -41,6 +53,15 @@ public class Ordersetting implements Serializable {
     }
 
     public void setReservations(Integer reservations) {
+        this.reservations = reservations;
+    }
+
+    public Ordersetting() {
+    }
+
+    public Ordersetting(Date orderDate, Integer number, Integer reservations) {
+        this.orderDate = orderDate;
+        this.number = number;
         this.reservations = reservations;
     }
 }

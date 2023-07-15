@@ -27,6 +27,7 @@ public class ExceptionAdvice {
      */
     @ExceptionHandler(SystemException.class) // 设置当前处理器类对应的异常类型
     public Result doSystemException(SystemException systemException) {
+        log.error(systemException.getMessage());
         return new Result(systemException.getCode(), null, systemException.getMessage());
     }
 
@@ -38,6 +39,7 @@ public class ExceptionAdvice {
      */
     @ExceptionHandler(BusinessException.class)
     public Result doBusinessException(BusinessException businessException) {
+        log.error(businessException.getMessage());
         return new Result(businessException.getCode(), null, businessException.getMessage());
     }
 
@@ -47,9 +49,9 @@ public class ExceptionAdvice {
      * @param exception 未知异常
      * @return 统一响应结果
      */
-    /*@ExceptionHandler(Exception.class)
+    @ExceptionHandler(Exception.class)
     public Result doOtherException(Exception exception) {
         log.error(exception.getMessage());
         return new Result(Code.SYSTEM_ERR, "系统繁忙，请稍后重试！", null);
-    }*/
+    }
 }
