@@ -1,8 +1,15 @@
 package com.fch.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Member implements Serializable {
     private Integer id;
 

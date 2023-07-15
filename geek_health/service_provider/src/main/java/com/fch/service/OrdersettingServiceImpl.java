@@ -42,18 +42,18 @@ public class OrdersettingServiceImpl implements OrdersettingService {
             return;
         }
 
+        // 调用插入/更新操作
         ordersettings.forEach(this::editOrdersetting);
     }
 
     /**
      * 更新预约设置
      *
-     *
      * @param ordersetting 预约设置
      */
     private boolean editOrdersetting(Ordersetting ordersetting) {
         Date orderDate = ordersetting.getOrderDate();
-        // 封住条件
+        // 封装条件
         OrdersettingExample ordersettingExample = new OrdersettingExample();
         OrdersettingExample.Criteria ordersettingExampleCriteria = ordersettingExample.createCriteria();
         ordersettingExampleCriteria.andOrderDateEqualTo(orderDate);

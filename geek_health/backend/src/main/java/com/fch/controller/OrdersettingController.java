@@ -44,10 +44,15 @@ public class OrdersettingController {
     public Result upload(@RequestPart("excelFile") MultipartFile excelFile) throws IOException {
         // 使用POI解析Excel表格和数据
         List<String[]> excelContext = POIUtil.readExcel(excelFile);
+
         // 将读取到的内容转换成预约设置对象集合
-        List<Ordersetting> ordersettings = excelContext.stream().map(orderSetting -> new
-                Ordersetting(DateUtil.parse(orderSetting[0], "yyyy.MM.dd"),
-                Integer.valueOf(orderSetting[1]), 0)).collect(Collectors.toList());
+        List<Ordersetting> ordersettings = excelContext.stream()
+                .map(orderSetting -> new Ordersetting(
+                        DateUtil.parse(orderSetting[0], "yyyy.MM.dd"),
+                        Integer.valueOf(orderSetting[1]),
+                        0))
+                .collect(Collectors.toList());
+
         try {
             // 实现数据批量导入到数据库
             ordersettingService.upload(ordersettings);
@@ -61,7 +66,7 @@ public class OrdersettingController {
     /**
      * 通过年月从数据库中查询预约设置信息
      *
-     * @param year 年份
+     * @param year  年份
      * @param month 月份
      * @return 返回统一响应结果
      */
@@ -75,7 +80,7 @@ public class OrdersettingController {
     }
 
     /**
-     * 根据时间更新预约设置
+     * 根据时间更新预约设置的可预约人数
      *
      * @param ordersetting 预约设置
      * @return 返回统一响应数据

@@ -1,7 +1,14 @@
 package com.fch.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.io.Serializable;
 
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Role implements Serializable {
     private Integer id;
 

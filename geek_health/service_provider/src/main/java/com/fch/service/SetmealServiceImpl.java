@@ -182,4 +182,14 @@ public class SetmealServiceImpl implements SetmealService {
         // 再删主表
         return setmealMapper.deleteByPrimaryKey(id) > 0;
     }
+
+    /**
+     * 查询所有套餐数据
+     *
+     * @return 所有套餐数据集合
+     */
+    @Override
+    public List<Setmeal> findAll() {
+        return setmealMapper.selectByExample(null);
+    }
 }

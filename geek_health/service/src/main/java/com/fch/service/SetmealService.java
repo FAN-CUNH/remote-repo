@@ -65,4 +65,11 @@ public interface SetmealService {
      * @return 返回删除状态
      */
     boolean deleteSetmealById(Integer id);
+
+    /**
+     * 查询所有套餐数据
+     *
+     * @return 所有套餐数据集合
+     */
+    List<Setmeal> findAll();
 }
