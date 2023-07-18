@@ -28,10 +28,10 @@
                     <div class="notice-item">
                         <div class="item-title">预约信息</div>
                         <div class="item-content">
-                            <p>体检人：{{orderInfo.member}}</p>
-                            <p>体检套餐：{{orderInfo.setmeal}}</p>
-                            <p>体检日期：{{orderInfo.orderDate}}</p>
-                            <p>预约类型：{{orderInfo.orderType}}</p>
+                            <p>体检人：{{ordersInfo.member}}</p>
+                            <p>体检套餐：{{ordersInfo.setmeal}}</p>
+                            <p>体检日期：{{ordersInfo.ordersDate}}</p>
+                            <p>预约类型：{{ordersInfo.ordersType}}</p>
                         </div>
                     </div>
                     <div class="notice-item">
@@ -57,17 +57,24 @@
     <script src="../plugins/vue/vue.js"></script>
     <script src="../plugins/vue/axios-0.18.0.js"></script>
     <script>
-        let id = getUrlParam("orderId");
+        let id = getUrlParam("ordersId");
     </script>
     <script>
         let vue = new Vue({
             el:'#app',
             data:{
-                orderInfo:{}
+                ordersInfo:{}
             },
             mounted(){
 				//发起axios请求，通过预约编号查询预约详情
-                
+                axios.get(`/orders/${id}`)
+                    .then(res => {
+                        if (res.data.code === 20041) {
+                            this.ordersInfo = res.data.data
+                        } else {
+                            this.$message.error(res.data.msg)
+                        }
+                    })
             }
         });
     </script>

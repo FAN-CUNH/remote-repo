@@ -20,9 +20,9 @@ public class ValidateCodeUtil {
     public static Integer generateValidateCode4Number(Integer length) {
         int code;
         if (length == 4) {
-            code = new Random().nextInt(9999);
+            code = new Random().nextInt(1000) + 9000;
         } else if (length == 6) {
-            code = new Random().nextInt(999999);
+            code = new Random().nextInt(100000) + 900000;
         } else {
             throw new RuntimeException("只能生成4位或6位的数组验证码");
         }
@@ -37,7 +37,7 @@ public class ValidateCodeUtil {
      */
     public static String generateValidateCode4String(Integer length) {
         Random random = new Random();
-        String hash1= Integer.toHexString(random.nextInt());
+        String hash1 = Integer.toHexString(random.nextInt());
         return hash1.substring(0, length);
     }
 }

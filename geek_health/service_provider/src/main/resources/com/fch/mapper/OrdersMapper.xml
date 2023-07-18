@@ -108,7 +108,10 @@
       #{orderType,jdbcType=VARCHAR}, #{orderStatus,jdbcType=VARCHAR}, #{setmealId,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.fch.domain.Orders" >
+  <insert id="insertSelective" parameterType="com.fch.domain.Orders" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+    <selectKey resultType="int" keyProperty="id" order="AFTER">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
     insert into orders
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

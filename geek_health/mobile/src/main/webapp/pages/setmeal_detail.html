@@ -94,7 +94,7 @@
             //发起axios请求，根据套餐ID查询套餐详细信息（包括套餐基本信息、套餐包含的检查组、检查组中包含的检查项）
             axios.get(`/setmeal/${id}`)
                 .then(res => {
-                    if (res.date.code === 20041) {
+                    if (res.data.code === 20041) {
                         this.setmeal = res.data.data
                         this.imgUrl = "http://rxmbmvfs1.hd-bkt.clouddn.com/" + this.setmeal.img
                     } else {

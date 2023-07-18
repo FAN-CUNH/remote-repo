@@ -72,4 +72,12 @@ public interface SetmealService {
      * @return 所有套餐数据集合
      */
     List<Setmeal> findAll();
+
+    /**
+     * 通过id查询套餐详情 （包含套餐信息，检查组信息以及检查项信息）
+     *
+     * @param id 套餐id
+     * @return 返回套餐详情
+     */
+    Setmeal getSetmealMessById(Integer id);
 }

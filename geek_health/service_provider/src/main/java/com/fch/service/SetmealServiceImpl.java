@@ -13,11 +13,19 @@ import com.fch.result.PageResult;
 import com.fch.utils.QiNiuUtil;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.transaction.annotation.Transactional;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -41,6 +49,12 @@ public class SetmealServiceImpl implements SetmealService {
     @Resource
     private JedisPool jedisPool;
 
+    @Resource
+    private TemplateEngine templateEngine;
+
+    @Value("${OUTPUT_PATH}")
+    private String OUTPUT_PATH;
+
     /**
      * 新增套餐
      *
@@ -57,6 +71,87 @@ public class SetmealServiceImpl implements SetmealService {
         jedisPool.getResource().sadd(RedisConstant.SETMEAL_PIC_DB_RESOURCES, setmeal.getImg());
 
         // 设置套餐和检查组的联系
+        setSetmealAndCheckgroupContact(setmeal, checkGroupIds);
+
+        // 添加数据后重新生成静态页面（包含套餐列表页面，以及套餐详情页面）
+        generateMobileStaticHtml();
+        return add > 0;
+    }
+
+    /**
+     * 生成静态页面
+     */
+    private void generateMobileStaticHtml() {
+        // 获取更新后的数据
+        List<Setmeal> setmealList = this.findAll();
+
+        // 生成套餐列表静态页面（单个）
+        generateStaticMobileSetmealListHtml(setmealList);
+
+        // 生成套餐详情静态页面（多个）
+        generateStaticMobileSetmealDetailHtml(setmealList);
+    }
+
+    /**
+     * 通过遍历套餐列表数据获取每一个套餐详情数据生成静态套餐详情页面
+     *
+     * @param setmealList 套餐列表数据
+     */
+    private void generateStaticMobileSetmealDetailHtml(List<Setmeal> setmealList) {
+        setmealList.forEach(setmeal -> {
+            HashMap<String, Object> map = new HashMap<>(16);
+            map.put("setmeal", this.getSetmealMessById(setmeal.getId()));
+            this.generateHtml("mobile_setmeal_detail.html", "setmeal_detail_" + setmeal.getId() + ".html", map);
+        });
+    }
+
+    /**
+     * 生成静态移动端套餐详情页面
+     *
+     * @param setmealList 套餐列表数据
+     */
+    private void generateStaticMobileSetmealListHtml(List<Setmeal> setmealList) {
+        HashMap<String, Object> map = new HashMap<>(16);
+        map.put("setmealList", setmealList);
+        this.generateHtml("mobile_setmeal.html", "m_setmeal.html", map);
+    }
+
+    /**
+     * 生成静态页面方法
+     *
+     * @param templateName 模版名称
+     * @param pageName 页面名称
+     * @param map 需要渲染到页面中的数据
+     */
+    private void generateHtml(String templateName, String pageName, HashMap<String, Object> map) {
+        // 声明写出流
+        PrintWriter printWriter = null;
+        // 创建thymeleaf上下文对象
+        Context context = new Context();
+        // 将数据 map 放入上下文中
+        context.setVariable("map", map);
+        // 创建写出流
+        try {
+            printWriter = new PrintWriter(OUTPUT_PATH + "/" + pageName);
+
+            // 执行页面静态化方法
+            templateEngine.process(templateName, context, printWriter);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (printWriter != null) {
+                printWriter.close();
+            }
+        }
+    }
+
+    /**
+     * 设置套餐与检查组的一对多关系
+     *
+     * @param setmeal       套餐信息
+     * @param checkGroupIds 检查组id数组
+     */
+    private void setSetmealAndCheckgroupContact(Setmeal setmeal, Integer[] checkGroupIds) {
         if (checkGroupIds != null && checkGroupIds.length > 0) {
             Stream.of(checkGroupIds).forEach(checkGroupId -> {
                 SetmealCheckgroupKey setmealCheckgroupKey = new SetmealCheckgroupKey();
@@ -65,7 +160,6 @@ public class SetmealServiceImpl implements SetmealService {
                 setmealCheckgroupMapper.insertSelective(setmealCheckgroupKey);
             });
         }
-        return add > 0;
     }
 
     /**
@@ -143,17 +237,16 @@ public class SetmealServiceImpl implements SetmealService {
         setmealCheckgroupMapper.deleteByExample(setmealCheckgroupExample);
 
         // 建立新的套餐与检查组之间的关系
-        if (checkGroupIds != null && checkGroupIds.length > 0) {
-            Stream.of(checkGroupIds).forEach(c -> {
-                SetmealCheckgroupKey setmealCheckgroupKey = new SetmealCheckgroupKey();
-                setmealCheckgroupKey.setSetmealId(setmeal.getId());
-                setmealCheckgroupKey.setCheckgroupId(c);
-                setmealCheckgroupMapper.insertSelective(setmealCheckgroupKey);
-            });
-        }
+        this.setSetmealAndCheckgroupContact(setmeal, checkGroupIds);
+
+        boolean flag = (setmealMapper.updateByPrimaryKeySelective(setmeal) > 0);
+
+        // 更新数据后重新生成静态页面（包含套餐列表页面，以及套餐详情页面）
+        this.generateMobileStaticHtml();
 
         // 更新
-        return setmealMapper.updateByPrimaryKeySelective(setmeal) > 0;
+        return flag;
+
     }
 
     /**
@@ -180,7 +273,13 @@ public class SetmealServiceImpl implements SetmealService {
         }
 
         // 再删主表
-        return setmealMapper.deleteByPrimaryKey(id) > 0;
+        boolean flag = (setmealMapper.deleteByPrimaryKey(id) > 0);
+
+        // 删除数据后重新生成静态页面（包含套餐列表页面，以及套餐详情页面）
+        this.generateMobileStaticHtml();
+
+
+        return flag;
     }
 
     /**
@@ -191,5 +290,16 @@ public class SetmealServiceImpl implements SetmealService {
     @Override
     public List<Setmeal> findAll() {
         return setmealMapper.selectByExample(null);
+    }
+
+    /**
+     * 通过id查询套餐详情 （包含套餐信息，检查组信息以及检查项信息）
+     *
+     * @param id 套餐id
+     * @return 返回套餐详情
+     */
+    @Override
+    public Setmeal getSetmealMessById(Integer id) {
+        return setmealMapper.getSetmealMessById(id);
     }
 }

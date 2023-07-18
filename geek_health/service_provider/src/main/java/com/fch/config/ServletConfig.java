@@ -21,7 +21,17 @@ public class ServletConfig extends AbstractAnnotationConfigDispatcherServletInit
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {SpringMVCConfig.class, DubboProviderConfig.class, MybatisConfig.class, RedisConfig.class};
+        return new Class[] {
+                // MVC
+                SpringMVCConfig.class,
+                // Dubbo 远程调用服务中心
+                DubboProviderConfig.class,
+                // Mybatis
+                MybatisConfig.class,
+                // Redis
+                RedisConfig.class,
+                // Thymeleaf
+                ThymeleafTemplateConfig.class};
     }
 
     @Override

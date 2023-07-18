@@ -1,16 +1,20 @@
 package com.fch.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Date;
 
-@ToString
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class Orders implements Serializable {
+
+    public static final String ORDER_TYPE_TELEPHONE = "电话预约";
+    public static final String ORDER_TYPE_WEIXIN = "微信预约";
+    public static final String ORDER_STATUS_YES = "已就诊";
+    public static final String ORDER_STATUS_NO = "未就诊";
+
     private Integer id;
 
     private Integer memberId;
@@ -23,51 +27,23 @@ public class Orders implements Serializable {
 
     private Integer setmealId;
 
-    public Integer getId() {
-        return id;
+    public Orders() {
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getMemberId() {
-        return memberId;
-    }
-
-    public void setMemberId(Integer memberId) {
+    public Orders(Integer memberId, Date orderDate, String orderType, String orderStatus, Integer setmealId) {
         this.memberId = memberId;
-    }
-
-    public Date getOrderDate() {
-        return orderDate;
-    }
-
-    public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
+        this.orderType = orderType;
+        this.orderStatus = orderStatus;
+        this.setmealId = setmealId;
     }
 
-    public String getOrderType() {
-        return orderType;
-    }
-
-    public void setOrderType(String orderType) {
-        this.orderType = orderType == null ? null : orderType.trim();
-    }
-
-    public String getOrderStatus() {
-        return orderStatus;
-    }
-
-    public void setOrderStatus(String orderStatus) {
-        this.orderStatus = orderStatus == null ? null : orderStatus.trim();
-    }
-
-    public Integer getSetmealId() {
-        return setmealId;
-    }
-
-    public void setSetmealId(Integer setmealId) {
+    public Orders(Integer id, Integer memberId, Date orderDate, String orderType, String orderStatus, Integer setmealId) {
+        this.id = id;
+        this.memberId = memberId;
+        this.orderDate = orderDate;
+        this.orderType = orderType;
+        this.orderStatus = orderStatus;
         this.setmealId = setmealId;
     }
 }

@@ -12,7 +12,7 @@ import org.springframework.context.annotation.PropertySource;
  * @Version 1.0
  */
 
-@EnableDubbo
+@EnableDubbo(scanBasePackages = "com.fch.controller")
 @PropertySource("classpath:dubbo-consumer.properties")
 public class MobileConsumerConfig {
 }

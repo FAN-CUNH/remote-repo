@@ -59,7 +59,7 @@ public class POIUtil {
                 // 获取当前sheet页的结束行 （有数据的最后一行）
                 int lastRowNum = sheet.getLastRowNum();
                 // 循环除去第一行的所有行 （略过标题行）
-                for (int rowNum = firstRowNum + 1; rowNum < lastRowNum; rowNum++) {
+                for (int rowNum = firstRowNum + 1; rowNum <= lastRowNum; rowNum++) {
                     // 获取当前行
                     Row row = sheet.getRow(rowNum);
                     if (row == null) {

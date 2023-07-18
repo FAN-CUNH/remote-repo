@@ -72,7 +72,9 @@ public class OrdersettingController {
      */
     @GetMapping("findDataByMonth/{year}/{month}")
     public Result findDataByMonth(@PathVariable("year") Integer year, @PathVariable("month") Integer month) {
+        log.info("根据时间查询预约设置信息 参数：{}", year +"-"+ month);
         List<Map<String, Integer>> list = ordersettingService.findDataByMonth(year, month);
+        log.info("根据时间查询预约设置信息 结果：{}", list);
         if (list != null && list.size() > 0) {
             return new Result(Code.GET_OK, Msg.GET_ORDERSETTING_SUCCESS, list);
         }

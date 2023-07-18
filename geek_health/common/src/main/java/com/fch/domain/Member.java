@@ -8,8 +8,6 @@ import java.io.Serializable;
 import java.util.Date;
 
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
 public class Member implements Serializable {
     private Integer id;
 
@@ -32,6 +30,31 @@ public class Member implements Serializable {
     private Date birthday;
 
     private String remark;
+
+    public Member() {
+    }
+
+    public Member(String name, String sex, String idCard, String phoneNumber, Date regTime) {
+        this.name = name;
+        this.sex = sex;
+        this.idCard = idCard;
+        this.phoneNumber = phoneNumber;
+        this.regTime = regTime;
+    }
+
+    public Member(Integer id, String fileNumber, String name, String sex, String idCard, String phoneNumber, Date regTime, String password, String email, Date birthday, String remark) {
+        this.id = id;
+        this.fileNumber = fileNumber;
+        this.name = name;
+        this.sex = sex;
+        this.idCard = idCard;
+        this.phoneNumber = phoneNumber;
+        this.regTime = regTime;
+        this.password = password;
+        this.email = email;
+        this.birthday = birthday;
+        this.remark = remark;
+    }
 
     public Integer getId() {
         return id;

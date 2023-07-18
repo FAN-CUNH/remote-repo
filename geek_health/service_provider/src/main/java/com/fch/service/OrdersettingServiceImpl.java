@@ -1,6 +1,5 @@
 package com.fch.service;
 
-import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.fch.domain.Ordersetting;
@@ -103,18 +102,18 @@ public class OrdersettingServiceImpl implements OrdersettingService {
         List<Ordersetting> ordersettings = ordersettingMapper.selectByExample(ordersettingExample);
 
         // 将查询到的预约设置对象转换成 List<Map<String, Integer>>
-        List<Map<String, Integer>> list = new ArrayList<>(16);
-        if (ordersettings != null && ordersettings.size() > 0) {
+        List<Map<String, Integer>> list = new ArrayList<>(32);
+        //if (ordersettings != null && ordersettings.size() > 0) {
             ordersettings.forEach(ordersetting -> {
                 // 将每天的数据封装成一个map集合
-                Map<String, Integer> map = new HashMap<>(16);
+                Map<String, Integer> map = new HashMap<>(32);
                 // 获取当天的日期、可预约人数、已预约人数  将其封装入同一个map,然后塞入list中
                 map.put("date", DateUtil.dayOfMonth(ordersetting.getOrderDate()));
                 map.put("number", ordersetting.getNumber());
                 map.put("reservations", ordersetting.getReservations());
                 list.add(map);
             });
-        }
+        //}
         return list;
     }
 

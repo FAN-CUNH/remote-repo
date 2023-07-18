@@ -80,16 +80,16 @@
                             <li v-for="dayobject in days">
                                 <template>
                                     <!-- 非当前月份 -->
-                                    <div class="other-month" v-if="dayobject.day.getMonth()+1 != currentMonth">
+                                    <div class="other-month" v-if="dayobject.day.getMonth()+1 !== currentMonth">
                                         {{ dayobject.day.getDate() }}
                                     </div>
                                     <!-- 当前月 -->
-                                    <div class="everyday" v-if="dayobject.day.getMonth()+1 == currentMonth">
+                                    <div class="everyday" v-if="dayobject.day.getMonth()+1 === currentMonth">
                                         <span class="datenumber">{{ dayobject.day.getDate()}}</span>
 
                                         <template>
                                             <template v-for="obj in leftobj">
-                                                <template v-if="obj.date == dayobject.day.getDate()">
+                                                <template v-if="obj.date === dayobject.day.getDate()">
                                                     <template v-if="obj.number > obj.reservations">
                                                         <div class="usual">
                                                             <p>可预约{{obj.number}}人</p>
@@ -103,14 +103,13 @@
                                                             <p>已满</p>
                                                         </div>
                                                     </template>
-                                                    <button v-if="dayobject.day > today"
-                                                            @click="handleOrderSet(dayobject.day , obj.reservations)"
-                                                            class="orderbtn">设置
-                                                    </button>
                                                 </template>
+                                                <button v-if="dayobject.day > today"
+                                                        @click="handleOrderSet(dayobject.day, obj.reservations)"
+                                                        class="orderbtn">设置
+                                                </button>
                                             </template>
                                         </template>
-
                                     </div>
                                 </template>
                             </li>
@@ -163,9 +162,9 @@
                         number: value
                     }).then((res) => {
                         if (res.data.code === 20031) {
-                            this.$message.success(res.data.msg)
                             // 获取更新后的日历信息
                             this.initData(this.formatDate(day.getFullYear(), day.getMonth() + 1, 1))
+                            this.$message.success(res.data.msg)
                         } else {
                             this.$message.error(res.data.msg)
                         }
@@ -198,62 +197,57 @@
             },
             //上传成功提示
             handleSuccess(response, file) {
-                if (response.code === 20011) {
-                    this.$message({
-                        message: response.message,
-                        type: 'success'
-                    });
-                } else {
-                    this.$message.error(response.message);
-                }
                 console.log(response, file);
+                if (response.code === 20011) {
+                    this.$message.success(response.msg);
+                } else {
+                    this.$message.error(response.msg);
+                }
             },
             //初始化当前页要展示的日期
             initData: function (cur) {
-                let d;
-                let now;
-                let date;
-                let index = 0;   //控制显示预定的天数
+                var date;
+                var index = 0;   //控制显示预定的天数
                 if (cur) {
                     date = new Date(cur);
                 } else {
-                    now = new Date();
-                    d = new Date(this.formatDate(now.getFullYear(), now.getMonth(), 1));
+                    var now = new Date();
+                    var d = new Date(this.formatDate(now.getFullYear(), now.getMonth(), 1));
                     d.setDate(35);
                     date = new Date(this.formatDate(d.getFullYear(), d.getMonth() + 1, 1));
                 }
                 this.currentDay = date.getDate();
                 this.currentYear = date.getFullYear();
                 this.currentMonth = date.getMonth() + 1;
-                this.currentWeek = date.getDay(); //本月第一天是周几（周日0 周六 6）
-                const today = new Date();
+                this.currentWeek = date.getDay(); // //本月第一天是周几（周日0 周六 6）
+                var today = new Date();
                 this.LocalMonth = today.getMonth() + 1;
                 if (this.currentWeek === 0) {
                     this.currentWeek = 7;
                 }
-                const str = this.formatDate(this.currentYear, this.currentMonth, this.currentDay);
+                var str = this.formatDate(this.currentYear, this.currentMonth, this.currentDay);
                 this.days.length = 0;
                 // 今天是周日，放在第一行第7个位置，前面6个
                 //初始化本周
-                for (let i = this.currentWeek - 1; i >= 0; i--) {
-                    d = new Date(str);
+                for (var i = this.currentWeek - 1; i >= 0; i--) {
+                    var d = new Date(str);
                     d.setDate(d.getDate() - i);
-                    let dayobject = {};
+                    var dayobject = {};
                     dayobject.day = d;
-                    now = new Date();
+                    var now = new Date();
                     if (d.getDate() === (now.getDate()) && d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear()) {
                         dayobject.index = index++;//从今天开始显示供预定的数量
-                    } else if (index !== 0 && index < 3)
+                    } else if (index != 0 && index < 3)
                         dayobject.index = index++;//从今天开始3天内显示供预定的数量
                     this.days.push(dayobject);//将日期放入data 中的days数组 供页面渲染使用
                 }
                 //其他周
                 for (var i = 1; i <= 35 - this.currentWeek; i++) {
-                    d = new Date(str);
+                    var d = new Date(str);
                     d.setDate(d.getDate() + i);
                     var dayobject = {};//dayobject   {day:date,index:2}
                     dayobject.day = d;
-                    now = new Date();
+                    var now = new Date();
                     if (d.getDate() === (now.getDate()) && d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear()) {
                         dayobject.index = index++;
                     } else if (index != 0 && index < 3)

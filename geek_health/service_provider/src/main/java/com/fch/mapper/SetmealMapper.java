@@ -1,8 +1,10 @@
 package com.fch.mapper;
 
+import com.fch.domain.Checkgroup;
+import com.fch.domain.Checkitem;
 import com.fch.domain.Setmeal;
 import com.fch.domain.SetmealExample;
-import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -28,4 +30,21 @@ public interface SetmealMapper {
     int updateByPrimaryKeySelective(Setmeal record);
 
     int updateByPrimaryKey(Setmeal record);
+
+    @Select("select * from setmeal where setmeal.id = #{id}")
+    @Results({
+            @Result(id = true, column = "id", property = "id"),
+            @Result(property = "checkgroups", column = "id", javaType = List.class, many = @Many(select = "getCheckgroupBySetmealId"))
+    })
+    Setmeal getSetmealMessById(Integer id);
+
+    @Select("select * from checkgroup where checkgroup.id in (select checkgroup_id from setmeal_checkgroup where setmeal_id = #{setmealId})")
+    @Results({
+            @Result(id = true, column = "id", property = "id"),
+            @Result(property = "checkitems", column = "id", javaType = List.class, many = @Many(select = "getCheckitemByCheckgroupId"))
+    })
+    List<Checkgroup> getCheckgroupBySetmealId(Integer setmealId);
+
+    @Select("select * from checkitem where checkitem.id in (select checkitem_id from checkgroup_checkitem where checkgroup_id = #{CheckgroupId})")
+    List<Checkitem> getCheckitemByCheckgroupId(Integer CheckgroupId);
 }
