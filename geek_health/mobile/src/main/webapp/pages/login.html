@@ -73,7 +73,14 @@
                     clock = window.setInterval(doLoop, 1000); //一秒执行一次
 
                     //发起axios请求，发送验证码
-                    
+                    axios.post("/validateCode/sendByLogin?telephone=" + telephone)
+                        .then(res => {
+                            if (res.data.code === 20011) {
+                                this.$message.success(res.data.msg)
+                            } else {
+                                this.$message.error(res.data.msg)
+                            }
+                        })
                 },
                 //登录
                 login(){
@@ -84,7 +91,15 @@
                     }
 
                     //发起axios请求，登录
-                    
+                    axios.post(`/member/login`, this.loginInfo)
+                        .then(res => {
+                            if (res.data.code === 20041) {
+                                // 登录成功，跳转到会员页面
+                                window.location.href = "/pages/member.html?id=" + res.data.data.id
+                            } else {
+                                this.$message.error(res.data.msg)
+                            }
+                        })
                 }
             }
         });

@@ -12,6 +12,7 @@ import com.fch.result.Result;
 import com.fch.service.SetmealService;
 import com.fch.utils.QiNiuUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import redis.clients.jedis.JedisPool;
@@ -47,6 +48,7 @@ public class SetmealController {
      * @param multipartFile 多部件解析器 文件上传
      * @return 返回统一返回结果
      */
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("upload")
     public Result upload(@RequestPart(value = "imgFile") MultipartFile multipartFile) {
         log.info("上传图片文件 参数：{}", multipartFile.toString());
@@ -78,6 +80,7 @@ public class SetmealController {
      * @param checkGroupIds 检查组id数组
      * @return 统一响应数据
      */
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("add")
     public Result addSetmeal(@RequestBody Setmeal setmeal, @RequestParam("checkGroupIds") Integer[] checkGroupIds) {
         log.info("新增套餐 参数：{}，{}", setmeal, checkGroupIds);
@@ -136,6 +139,7 @@ public class SetmealController {
      * @param checkGroupIds 与套餐关联的检查组id
      * @return 返回统一响应结果
      */
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("update")
     public Result update(@RequestBody Setmeal setmeal, @RequestParam("checkGroupIds") Integer[] checkGroupIds) {
         log.info("更新套餐 参数：{}, {}", setmeal, checkGroupIds);
@@ -150,6 +154,7 @@ public class SetmealController {
      * @param id 套餐id
      * @return 返回统一响应结果
      */
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("{id}")
     public Result deleteSetmealById(@PathVariable("id") Integer id) {
         log.info("通过套餐id删除套餐 参数：{}", id);

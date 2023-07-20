@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.security.RolesAllowed;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -40,6 +41,7 @@ public class OrdersettingController {
      * @param excelFile excel文件对象
      * @return 返回统一响应结果
      */
+    @RolesAllowed({"HEALTH_MANAGER"})
     @PostMapping("upload")
     public Result upload(@RequestPart("excelFile") MultipartFile excelFile) throws IOException {
         // 使用POI解析Excel表格和数据
@@ -87,6 +89,7 @@ public class OrdersettingController {
      * @param ordersetting 预约设置
      * @return 返回统一响应数据
      */
+    @RolesAllowed({"HEALTH_MANAGER"})
     @PutMapping("editNumberByDate")
     public Result editNumberByDate(@RequestBody Ordersetting ordersetting) {
         log.info("更新预约设置 参数：{}", ordersetting);

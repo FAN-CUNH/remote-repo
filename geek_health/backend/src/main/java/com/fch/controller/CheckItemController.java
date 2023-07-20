@@ -9,6 +9,7 @@ import com.fch.result.PageResult;
 import com.fch.result.Result;
 import com.fch.service.CheckItemService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -43,6 +44,7 @@ public class CheckItemController {
         return new Result(flag ? Code.GET_OK : Code.GET_ERR, flag ? Msg.QUERY_CHECKITEM_SUCCESS : Msg.QUERY_CHECKITEM_FAIL, checkItems);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("add")
     public Result addCheckItem(@RequestBody Checkitem checkitem) {
         log.info("新增检查项 参数：{}", checkitem);
@@ -62,6 +64,7 @@ public class CheckItemController {
                 checkitem);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("update")
     public Result update(@RequestBody Checkitem checkitem) {
         log.info("更新检查项 参数：{}", checkitem);
@@ -70,6 +73,7 @@ public class CheckItemController {
         return new Result(flag ? Code.UPDATE_OK : Code.UPDATE_ERR, flag ? Msg.EDIT_CHECKITEM_SUCCESS : Msg.EDIT_CHECKITEM_FAIL);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("{id}")
     public Result delete(@PathVariable Integer id) {
         log.info("通过Id删除检查项 参数：{}", id);

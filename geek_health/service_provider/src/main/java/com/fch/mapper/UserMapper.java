@@ -2,7 +2,7 @@ package com.fch.mapper;
 
 import com.fch.domain.User;
 import com.fch.domain.UserExample;
-import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -28,4 +28,12 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    @Select("select * from user where username = #{username}")
+    @Results({
+            @Result(id = true, column = "id", property = "id"),
+            @Result(column = "id", property = "roles", javaType = List.class,
+                    many = @Many(select = "com.fch.mapper.RoleMapper.selectRolesByUserId"))
+    })
+    User selectUserByUsername(String username);
 }

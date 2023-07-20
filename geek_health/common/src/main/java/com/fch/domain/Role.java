@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
+import java.util.List;
 
 @ToString
 @NoArgsConstructor
@@ -18,6 +19,15 @@ public class Role implements Serializable {
 
     private String description;
 
+    public List<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<Permission> permissions) {
+        this.permissions = permissions;
+    }
+
+    private List<Permission> permissions;
     public Integer getId() {
         return id;
     }

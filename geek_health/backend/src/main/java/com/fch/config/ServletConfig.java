@@ -1,9 +1,11 @@
 package com.fch.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;
+import javax.servlet.FilterRegistration;
 
 /**
  * @packageName com.fch.config
@@ -21,18 +23,28 @@ public class ServletConfig extends AbstractAnnotationConfigDispatcherServletInit
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {SpringMVCConfig.class, BackendConsumerConfig.class, RedisConfig.class, };
+        return new Class[]{
+                SpringMVCConfig.class, BackendConsumerConfig.class, RedisConfig.class, SpringSecurityConfig.class
+        };
     }
 
+    /**
+     * @return 指定DispatchServlet的映射规则， url-pattern
+     */
     @Override
     protected String[] getServletMappings() {
-        return new String[] {"/"};
+        return new String[]{"/"};
     }
 
+    /**
+     * @return 注册过滤器
+     */
     @Override
     protected Filter[] getServletFilters() {
         CharacterEncodingFilter filter = new CharacterEncodingFilter();
         filter.setEncoding("UTF-8");
-        return new Filter[] {filter};
+
+        DelegatingFilterProxy springSecurityFilterChain = new DelegatingFilterProxy("springSecurityFilterChain");
+        return new Filter[]{filter, springSecurityFilterChain};
     }
 }

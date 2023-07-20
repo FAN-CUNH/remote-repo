@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @ToString
 @NoArgsConstructor
@@ -26,6 +27,16 @@ public class User implements Serializable {
     private String station;
 
     private String telephone;
+
+    private List<Role> roles;
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 
     public Integer getId() {
         return id;

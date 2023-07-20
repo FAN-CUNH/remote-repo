@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85438950-cc35-44e9-aba9-65fb4e80dfc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/SpringSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/service/SpringSecurityUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/report_business.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/report_member.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/report_setmeal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/plugins/echarts/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/template/report_template.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/utils/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/java/com/fch/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/member.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/memberDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/ReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/CheckGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/CheckGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/CheckItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/CheckItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/OrdersettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/OrdersettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/mobile/src/main/java/com/fch/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/java/com/fch/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/mobile/src/main/java/com/fch/controller/ValidateCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/java/com/fch/controller/ValidateCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/PermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/OrdersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.2\mav-repo" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectId" id="2SpABtnXg63y67wjTVZrMdCVXDv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/Java-SpringBoot",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fch.SpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85438950-cc35-44e9-aba9-65fb4e80dfc8" name="Changes" comment="" />
+      <created>1689833017266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689833017266</updated>
+      <workItem from="1689833018387" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -52,6 +52,9 @@ public class ExceptionAdvice {
     @ExceptionHandler(Exception.class)
     public Result doOtherException(Exception exception) {
         log.error(exception.getMessage());
+        if ("不允许访问".equals(exception.getMessage())) {
+            return new Result(403, "无访问权限");
+        }
         return new Result(Code.SYSTEM_ERR, "系统繁忙，请稍后重试！", null);
     }
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/asset-favico.ico">
+    <title>健康档案详情</title>
+    <link rel="stylesheet" href="../css/page-health-record.css"/>
+    <link rel="stylesheet" href="../css/page-health-recordDetail.css"/>
+</head>
+
+<body data-spy="scroll" data-target="#myNavbar" data-offset="150">
+<div class="app" id="app">
+    <!-- 页面头部 -->
+    <div class="top-header">
+        <span class="f-left"><i class="icon-back" onclick="history.go(-1)"></i></span>
+        <span class="center">极客健康</span>
+        <span class="f-right"><i class="icon-more"></i></span>
+    </div>
+    <!-- 页面内容 -->
+    <div class="contentBox">
+        <div class="list-content">
+            <div class="fix-info">
+                <ul class="list-unstyled ">
+                    <li><span class="tit">档案号</span><span class="info" v-text="member.fileNumber">110111001110</span>
+                    </li>
+                    <li><span class="tit">姓名</span><span class="info" v-text="member.name">张小花</span></li>
+                    <li><span class="tit">身份证号</span><span class="info"
+                                                               v-text="member.idCard">612731199802062258</span></li>
+                    <li><span class="tit">手机号</span><span class="info" v-text="member.phoneNumber">18500557266</span>
+                    </li>
+                    <!--<li><span class="tit">婚否</span><span class="info" v-text="member.fileNumber">否</span></li>-->
+                </ul>
+            </div>
+            <div class="fix-info">
+                <ul class="mui-list-unstyled ">
+                    <li><span class="tit">身高</span><span class="info">170cm</span></li>
+                    <li><span class="tit">体重</span><span class="info">50kg</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页面 css js -->
+<!-- <script src="health-index.js"></script> -->
+<script src="../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../plugins/healthmobile.js"></script>
+<script src="../plugins/vue/vue.js"></script>
+<script src="../plugins/vue/axios-0.18.0.js"></script>
+<script>
+    let id = getUrlParam("id");
+</script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            member: {}
+        },
+        created() {
+            // 发起axios请求，根据会员ID查询会员信息
+            axios.get(`/member/${id}`)
+                .then(res => {
+                    if (res.data.code === 20041) {
+                        this.member = res.data.data
+                    } else {
+                        this.$message.error(res.data.msg)
+                    }
+                })
+        }
+    })
+</script>
+
+</body>

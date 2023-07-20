@@ -16,7 +16,7 @@ import java.io.Serializable;
 @Data
 public class Result implements Serializable {
     /**
-     * 返回执行结果，true为执行成功 false为执行失败
+     * code
      */
     private Integer code;
 

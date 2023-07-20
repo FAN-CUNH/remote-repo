@@ -7,6 +7,7 @@ import com.fch.domain.SetmealExample;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
+import java.util.Map;
 
 public interface SetmealMapper {
     int countByExample(SetmealExample example);
@@ -47,4 +48,10 @@ public interface SetmealMapper {
 
     @Select("select * from checkitem where checkitem.id in (select checkitem_id from checkgroup_checkitem where checkgroup_id = #{CheckgroupId})")
     List<Checkitem> getCheckitemByCheckgroupId(Integer CheckgroupId);
+
+    @Select("select setmeal.name, count(orders.id) value from setmeal, orders where setmeal.id = orders.setmeal_id group by setmeal_id")
+    List<Map<String, Object>> getSetmealCountById();
+
+    @Select("select setmeal.name, count(orders.id) setmeal_count, count(orders.id)/(select count(0) from orders ) proportion from setmeal, orders where setmeal.id = orders.setmeal_id group by setmeal.id order by setmeal_count desc limit 0, 4")
+    List<Map<String, Object>> getHotSetmeal();
 }

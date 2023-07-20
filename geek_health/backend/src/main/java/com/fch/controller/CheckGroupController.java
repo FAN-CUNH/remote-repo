@@ -9,6 +9,7 @@ import com.fch.result.PageResult;
 import com.fch.result.Result;
 import com.fch.service.CheckGroupService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -47,6 +48,7 @@ public class CheckGroupController {
         }
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("add")
     public Result addCheckGroup(@RequestBody Checkgroup checkgroup, @RequestParam("checkitemIds") Integer[] checkitemIds) {
         log.info("新增检查组 参数：{},{}", checkgroup, checkitemIds);
@@ -55,6 +57,7 @@ public class CheckGroupController {
         return new Result(flag ? Code.SAVE_OK : Code.SAVE_ERR, flag ? Msg.ADD_CHECKGROUP_SUCCESS : Msg.ADD_CHECKGROUP_FAIL);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("{id}")
     public Result deleteById(@PathVariable Integer id) {
         log.info("删除检查组 参数：{}", id);
@@ -81,6 +84,7 @@ public class CheckGroupController {
         return new Result(flag ? Code.GET_OK : Code.GET_ERR, flag ? Msg.QUERY_CHECKITEM_SUCCESS : Msg.QUERY_CHECKITEM_FAIL, checkItemIds);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("update")
     public Result update(@RequestBody Checkgroup checkgroup, @RequestParam("checkitemIds") Integer[] checkItemIds) {
         log.info("更新检查组 入参：{}，{}", checkgroup, checkItemIds);

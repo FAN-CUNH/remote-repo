@@ -230,6 +230,13 @@
                 <version>${spring.security.version}</version>
             </dependency>
 
+            <!-- 使用JSR250 注解 -->
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>jsr250-api</artifactId>
+                <version>1.0</version>
+            </dependency>
+
             <!-- 定时任务 -->
             <dependency>
                 <groupId>org.quartz-scheduler</groupId>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 页面meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>极客健康</title>
+        <meta name="description" content="极客健康">
+        <meta name="keywords" content="极客健康">
+        <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+        <!-- 引入样式 -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="hold-transition">
+        <div id="app">
+            <div class="content-header">
+                <h1>统计分析<small>会员数量</small></h1>
+                <el-breadcrumb separator-class="el-icon-arrow-right" class="breadcrumb">
+                    <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+                    <el-breadcrumb-item>统计分析</el-breadcrumb-item>
+                    <el-breadcrumb-item>会员数量</el-breadcrumb-item>
+                </el-breadcrumb>
+            </div>
+            <div class="app-container">
+                <div class="box">
+                    <!-- 2.为 ECharts 准备一个具备大小（宽高）的 DOM -->
+                    <div id="chart1" style="height:600px;"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- 引入组件库 -->
+    <script src="../js/vue.js"></script>
+    <script src="../js/axios-0.18.0.js"></script>
+    <!--  1.引入echarts.js资源-->
+    <script src="../plugins/echarts/echarts.js"></script>
+    <script type="text/javascript">
+        // 3.基于准备好的dom，初始化echarts实例
+        let myChart1 = echarts.init(document.getElementById('chart1'));
+
+        // 4.装配Option
+        axios.get("/report/getMemberReport").then((res)=>{
+            if (res.data.code === 20041) {
+                myChart1.setOption({
+                    title: {
+                        text: '会员数量'
+                    },
+                    tooltip: {},
+                    legend: {
+                        data:['会员数量']
+                    },
+                    xAxis: {
+                        //X轴数据  月份   ['2022.12', '2022.12', '2023.01', '2023.02']
+                        data: res.data.data.months
+                    },
+                    yAxis: {
+                        type:'value'
+                    },
+                    series: [{
+                        name: '会员数量',
+                        type: 'line',  //折线图
+                        //数据  会员数量  [500, 700, 850, 934]
+                        data: res.data.data.memberCount
+                    }]
+                });
+            } else {
+                this.$message.error(res.data.msg)
+            }
+        });
+    </script>
+</html>

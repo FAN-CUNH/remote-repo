@@ -38,14 +38,14 @@
                         <el-dropdown class="avatar-container right-menu-item" trigger="click">
                             <div class="avatar-wrapper">
                                 <img src="../img/user2-160x160.jpg" class="user-avatar">
-                                Jack
+                                {{username}}
                             </div>
                             <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item divided>
                                     <span style="display:block;">修改密码</span>
                                 </el-dropdown-item>
                                 <el-dropdown-item divided>
-                                        <span style="display:block;">退出</span>
+                                        <span style="display:block;"><a href="/logout">退出</a></span>
                                     </el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
@@ -79,17 +79,19 @@
 <script src="../js/vue.js"></script>
 <script src="../plugins/elementui/index.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/axios-0.18.0.js"></script>
 <script>
     new Vue({
         el: '#app',
         data:{
+            username:'', // 当前登录用户的用户名
             menuList:[
-                {
+                /*{
                     "path": "1",
                     "title": "工作台",
                     "icon":"fa-dashboard",
                     "children": []
-                },
+                },*/
                 {
                     "path": "2",
                     "title": "会员管理",
@@ -171,13 +173,34 @@
                     "children":[//是否有子菜单，若没有，则为[]
                         {
                             "path": "/5-1",
-                            "title": "工作量统计",
-                            "linkUrl":"all-medical-list.html",
+                            "title": "会员数量统计",
+                            "linkUrl":"report_member.html",
+                            "children":[]
+                        },
+                        {
+                            "path": "/5-2",
+                            "title": "套餐预约占比",
+                            "linkUrl":"report_setmeal.html",
+                            "children":[]
+                        },
+                        {
+                            "path": "/5-3",
+                            "title": "运营数据统计",
+                            "linkUrl":"report_business.html",
                             "children":[]
                         }
                     ]
                 }
             ]
+        },
+        created() {
+            // 发起axios请求，获取当前登录用户信息
+            axios.get(`/user/getUsername`)
+                .then(res => {
+                    if (res.data.code === 20041) {
+                        this.username = res.data.data
+                    }
+                })
         }
     });
     $(function() {

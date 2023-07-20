@@ -3,6 +3,7 @@ package com.fch.mapper;
 import com.fch.domain.Permission;
 import com.fch.domain.PermissionExample;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -28,4 +29,7 @@ public interface PermissionMapper {
     int updateByPrimaryKeySelective(Permission record);
 
     int updateByPrimaryKey(Permission record);
+
+    @Select("select * from permission, role_permission where permission.id = role_permission.permission_id")
+    List<Permission> selectPermissionsByRoleId(Integer roleId);
 }

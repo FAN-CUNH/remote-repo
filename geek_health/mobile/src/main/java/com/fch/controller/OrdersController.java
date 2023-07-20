@@ -70,9 +70,9 @@ public class OrdersController {
     }
 
     /**
-     * 通过订单id查询订单信息
+     * 通过预约id查询订单信息
      *
-     * @param id 订单id
+     * @param id 预约id
      * @return 返回查询到的会员信息
      */
     @GetMapping("{id}")
