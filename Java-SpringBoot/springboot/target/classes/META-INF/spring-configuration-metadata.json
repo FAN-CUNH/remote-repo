@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "emp",
+      "type": "com.fch.pojo.Emp",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "user",
+      "type": "com.fch.pojo.User",
+      "sourceType": "com.fch.pojo.User"
+    }
+  ],
+  "properties": [
+    {
+      "name": "emp.addresses",
+      "type": "java.util.List<com.fch.pojo.Address>",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "emp.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "emp.gender",
+      "type": "java.lang.String",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "emp.image",
+      "type": "java.lang.String",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "emp.job",
+      "type": "java.lang.String",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "emp.name",
+      "type": "java.lang.String",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "emp.some-address",
+      "type": "java.util.Map<java.lang.String,java.util.List<com.fch.pojo.Address>>",
+      "sourceType": "com.fch.pojo.Emp"
+    },
+    {
+      "name": "user.address",
+      "type": "com.fch.pojo.Address",
+      "sourceType": "com.fch.pojo.User"
+    },
+    {
+      "name": "user.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.fch.pojo.User"
+    },
+    {
+      "name": "user.name",
+      "type": "java.lang.String",
+      "sourceType": "com.fch.pojo.User"
+    }
+  ],
+  "hints": []
+}

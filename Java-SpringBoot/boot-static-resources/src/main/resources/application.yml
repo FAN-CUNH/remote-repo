@@ -1,0 +1,16 @@
+# \u81EA\u5B9A\u4E49\u9879\u76EE\u542F\u52A8\u7AEF\u53E3\u53F7
+server:
+  port: 80
+
+spring:
+  web:
+# \u81EA\u5B9A\u4E49\u9759\u6001\u8D44\u6E90\u5B58\u653E\u8DEF\u5F84 \uFF08\u9759\u6001\u8D44\u6E90\u7684\u9ED8\u8BA4\u5B58\u653E\u8DEF\u5F84: /static, /public, /resources, /META-INF/resources\uFF09
+    resources:
+      static-locations:
+        - classpath:/static
+        - classpath:/templates
+
+  mvc:
+# \u81EA\u5B9A\u4E49\u9759\u6001\u8D44\u6E90\u8BBF\u95EE\u8DEF\u5F84 \uFF08\u9759\u6001\u8D44\u6E90\u7684\u9ED8\u8BA4\u8BBF\u95EE\u8DEF\u5F84: /**\uFF09
+    static-path-pattern: /static/**
+

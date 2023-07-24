@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ public class EmpController {
     /**
      * 调用 EmpService
      */
-    @Autowired // 运行时，IOC容器会提供该类型的bean对象，并赋值给该变量–依赖注入
+    @Resource // 运行时，IOC容器会提供该类型的bean对象，并赋值给该变量–依赖注入
     private EmpService empService;
 
     @RequestMapping("/listEmp")

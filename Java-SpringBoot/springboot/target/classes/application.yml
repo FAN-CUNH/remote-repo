@@ -1,0 +1,18 @@
+server:
+  port: 80
+emp:
+  name: 张三
+  age: 18
+  gender: 男
+  image: fsf
+  job: 程序员
+  addresses:
+    - {province: 江苏, city: 无锡}
+    - {province: 上海, city: 上海}
+  some-address:
+    work:
+      - {province: 江苏, city: 无锡}
+      - {province: 上海, city: 上海}
+    home:
+      - { province: 江苏, city: 无锡 }
+      - { province: 上海, city: 上海 }

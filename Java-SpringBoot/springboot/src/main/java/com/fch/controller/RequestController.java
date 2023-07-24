@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @packageName com.fch.controller
  * @ClassName RequestController
- * @Description 请求类：主要介绍了10中参数请求
+ * @Description 请求类：主要介绍了10种参数请求
  * @Author CunHao Fan
  * @Date 2023/6/3 1:43
  * @Version 1.0

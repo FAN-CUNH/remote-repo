@@ -1,5 +1,8 @@
 package com.fch.pojo;
 
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
 /**
  * @packageName com.fch.pojo
  * @ClassName Address
@@ -8,31 +11,8 @@ package com.fch.pojo;
  * @Date 2023/6/3 2:43
  * @Version 1.0
  */
+@Data
 public class Address {
     private String province;
     private String city;
-
-    public String getProvince() {
-        return province;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    @Override
-    public String toString() {
-        return "Address{" +
-                "province='" + province + '\'' +
-                ", city='" + city + '\'' +
-                '}';
-    }
 }

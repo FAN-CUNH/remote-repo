@@ -1,11 +1,9 @@
 package com.fch.service.impl;
 
 import com.fch.dao.EmpDao;
-import com.fch.dao.impl.EmpDaoImpl;
 import com.fch.pojo.Emp;
 import com.fch.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,7 +16,7 @@ import java.util.List;
  * @Date 2023/6/3 17:55
  * @Version 1.0
  */
-// @Component  将当前类交给工oC容器管理,成为工oC容器中的bean - 控制反转
+// @Component  将当前类交给IoC容器管理,成为IoC容器中的bean - 控制反转
 @Service // @Component 的衍生注解之一 用在 Service 层实现控制反转
 public class EmpServiceImpl implements EmpService {
     /**

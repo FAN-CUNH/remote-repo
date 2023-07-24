@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>秒杀</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>秒杀</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./elementui/index.css">
+</head>
+    <body>
+        <div id="app">
+            <h2>Hello World!</h2>
+            <el-button type="primary" :disabled="isDisabled" class="butT" @click="handleKill()">秒杀商品</el-button>
+        </div>
+    </body>
+</html>
+<!-- 引入组件库 -->
+<script src="./vue.js"></script>
+<script src="./elementui/index.js"></script>
+<script src="./axios-0.18.0.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            isDisabled:false
+        },
+        //钩子函数，VUE对象初始化完成后自动执行
+        created() {
+
+        },
+        methods: {
+            //秒杀
+            handleKill() {
+                axios.post('/secKill/101').then(response => {
+                    if (response.data.flag) {
+                        this.$message.success(response.data.message);
+                    } else {
+                        this.isDisabled = true
+                        this.$message.error(response.data.message);
+                    }
+                })
+            }
+        }
+    })
+</script>
