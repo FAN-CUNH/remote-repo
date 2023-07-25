@@ -2,15 +2,25 @@
 server:
   port: 80
 
+
 spring:
   web:
-# \u81EA\u5B9A\u4E49\u9759\u6001\u8D44\u6E90\u5B58\u653E\u8DEF\u5F84 \uFF08\u9759\u6001\u8D44\u6E90\u7684\u9ED8\u8BA4\u5B58\u653E\u8DEF\u5F84: /static, /public, /resources, /META-INF/resources\uFF09
+    # \u81EA\u5B9A\u4E49\u9759\u6001\u8D44\u6E90\u5B58\u653E\u8DEF\u5F84 \uFF08\u9759\u6001\u8D44\u6E90\u7684\u9ED8\u8BA4\u5B58\u653E\u8DEF\u5F84: /static, /public, /resources, /META-INF/resources\uFF09
     resources:
       static-locations:
         - classpath:/static
         - classpath:/templates
 
   mvc:
-# \u81EA\u5B9A\u4E49\u9759\u6001\u8D44\u6E90\u8BBF\u95EE\u8DEF\u5F84 \uFF08\u9759\u6001\u8D44\u6E90\u7684\u9ED8\u8BA4\u8BBF\u95EE\u8DEF\u5F84: /**\uFF09
+    # \u81EA\u5B9A\u4E49\u9759\u6001\u8D44\u6E90\u8BBF\u95EE\u8DEF\u5F84 \uFF08\u9759\u6001\u8D44\u6E90\u7684\u9ED8\u8BA4\u8BBF\u95EE\u8DEF\u5F84: /**\uFF09
     static-path-pattern: /static/**
+
+    # \u5F00\u542F\u9875\u9762\u8868\u5355\u7684Rest\u529F\u80FD\uFF08\u652F\u6301PUT\u3001DELETE\uFF09
+    hiddenmethod:
+      filter:
+        enabled: true
+  jackson:
+    time-zone: Asia/Shanghai # GMT+8 \u4E24\u8005\u90FD\u53EF\u4EE5\u5B9E\u73B0\u6821\u6B63\u65F6\u533A
+    date-format: yyyy-MM-dd # \u6B64\u914D\u7F6E\u76F8\u7B49\u4E8E@JsonFormat(pattern = "yyyy-MM-dd")
+
 

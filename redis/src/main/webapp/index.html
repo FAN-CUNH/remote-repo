@@ -25,7 +25,7 @@
     new Vue({
         el: '#app',
         data:{
-            isDisabled:false
+            isDisabled:false,
         },
         //钩子函数，VUE对象初始化完成后自动执行
         created() {
@@ -34,12 +34,12 @@
         methods: {
             //秒杀
             handleKill() {
-                axios.post('/secKill/101').then(response => {
-                    if (response.data.flag) {
-                        this.$message.success(response.data.message);
+                axios.post('/kill/101').then(res => {
+                    if (res.data.code === 200) {
+                        this.$message.success(res.data.msg);
                     } else {
                         this.isDisabled = true
-                        this.$message.error(response.data.message);
+                        this.$message.error(res.data.msg);
                     }
                 })
             }

@@ -26,13 +26,14 @@ public class LuaUtil {
     public static <T> T loadScript(JedisPool jedisPool, String luaName, Integer count, String... params) {
         // 加载脚本
         String luaPath = Objects.requireNonNull(LuaUtil.class.getResource("/")).getPath() + luaName;
+        System.out.println("luaPath = " + luaPath);
 
         // 通过IO流读取脚本，转换成字符串
         BufferedReader bufferedReader = null;
-        Jedis jedis = null;
-        T o;
+        Jedis jedis;
+        T o = null;
         try {
-            bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(luaName)));
+            bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(luaPath)));
             StringBuilder stringBuilder = new StringBuilder();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -47,11 +48,8 @@ public class LuaUtil {
             o  = (T) jedis.evalsha(sha, count, params);
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         } finally {
-            if (jedis != null && jedis.isConnected()) {
-                jedisPool.returnResource(jedis);
-            }
             if (bufferedReader != null) {
                 try {
                     bufferedReader.close();
@@ -60,6 +58,7 @@ public class LuaUtil {
                 }
             }
         }
+        System.out.println("o = " + o);
         return o;
     }
 }

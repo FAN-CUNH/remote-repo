@@ -4,9 +4,13 @@ import com.fch.pojo.User;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @packageName com.fch.controller
@@ -21,25 +25,24 @@ public class RequestController {
     /**
      * 1.简单的参数Get请求和Post请求
      *
+     * @param name 客户端请求参数name
+     * @param age  客户端请求参数age
+     * @return 返回OK
      * @RequestParam(name = "name" ,required = false)
      * 注解@RequestParam()
-     *                  参数： 1.name or value 表示请求参数的键和值
-     *                        2.required 默认值是true，代表该键的值必须传递否则报错 false可传可不传
-     *                  作用： 方法形式参数与请求名不匹配，可通过该注解完成映射
-     *
-     * @param name 客户端请求参数name
-     * @param age 客户端请求参数age
-     * @return 返回OK
+     * 参数： 1.name or value 表示请求参数的键和值
+     * 2.required 默认值是true，代表该键的值必须传递否则报错 false可传可不传
+     * 作用： 方法形式参数与请求名不匹配，可通过该注解完成映射
      */
     @RequestMapping("/simpleParam")
-    public String simpleParam(@RequestParam(name = "name" ,required = false) String name, Integer age) {
+    public String simpleParam(@RequestParam(name = "name", required = false) String name, Integer age) {
         System.out.print(name + ":" + age);
         return "SimpleParam OK";
     }
 
     /**
      * 2.简单实体参数的封装：
-     *    请求参数与实体属性一一对应
+     * 请求参数与实体属性一一对应
      *
      * @param user 实体类参数
      * @return 返回OK
@@ -52,8 +55,8 @@ public class RequestController {
 
     /**
      * 3.复杂实体参数请求：
-     *      请求参数名与实体对象属性名对应，即可直接通过pojo接收
-     *      按照类的组合关系对应
+     * 请求参数名与实体对象属性名对应，即可直接通过pojo接收
+     * 按照类的组合关系对应
      *
      * @param user 实体类参数
      * @return 返回OK
@@ -66,7 +69,7 @@ public class RequestController {
 
     /**
      * 4.数组参数请求：
-     *      请求名与入参名相同即可
+     * 请求名与入参名相同即可
      *
      * @param hobby 前端请求数组参数
      * @return 响应信息OK
@@ -79,8 +82,8 @@ public class RequestController {
 
     /**
      * 5.集合参数请求：
-     *      入参位置必须加上@Requestparam注解、将多个请求名相同的参数封装入list集合
-     *      集合名与请求名相同
+     * 入参位置必须加上@Requestparam注解、将多个请求名相同的参数封装入list集合
+     * 集合名与请求名相同
      *
      * @param hobby 前端请求集合参数
      * @return 响应信息OK
@@ -93,8 +96,8 @@ public class RequestController {
 
     /**
      * 6.日期请求参数：
-     *      需使用@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")规定日期请求参数格式
-     *      请求名与参数名相同
+     * 需使用@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")规定日期请求参数格式
+     * 请求名与参数名相同
      *
      * @param updateTime 日期请求参数
      * @return 响应状态信息
@@ -108,8 +111,9 @@ public class RequestController {
 
     /**
      * 7.Json参数请求：
-     *      要求Json数据的Key名与=形参对象的属性名一一对应
-     *      需使用@RequestBody注解标识 将JSON数据封装到POJO对象中
+     * 要求Json数据的Key名与=形参对象的属性名一一对应
+     * 需使用@RequestBody注解标识 将JSON数据封装到POJO对象中
+     *
      * @param user 实体对象接收json数据
      * @return 返回状态信息
      */
@@ -121,7 +125,7 @@ public class RequestController {
 
     /**
      * 9.单个路径参数请求：
-     *      通过请求URL直接传递参数，使用{..}来标识该路径参数，需要使用@PathVariable获取路径参数
+     * 通过请求URL直接传递参数，使用{..}来标识该路径参数，需要使用@PathVariable获取路径参数
      *
      * @param id 形参接收路径参数
      * @return 放回响应状态信息
@@ -134,9 +138,9 @@ public class RequestController {
 
     /**
      * 9.多个路径参数请求：
-     *      通过请求URL直接传递参数，使用{..}来标识该路径参数，需要使用@PathVariable获取路径参数
+     * 通过请求URL直接传递参数，使用{..}来标识该路径参数，需要使用@PathVariable获取路径参数
      *
-     * @param id 形参接收路径参数
+     * @param id   形参接收路径参数
      * @param name 形参接收路径参数
      * @return 放回响应状态信息
      */
@@ -145,5 +149,40 @@ public class RequestController {
         System.out.println(id);
         System.out.println(name);
         return "PathParam OK";
+    }
+
+    /**
+     * @param host      指明请求将要发送到的主机名和端口号
+     * @param userAgent User-Agent是叫做用户代理，一个特殊字符串头，是一种向访问网站提供你所使用的浏览器类型及版本、操作系统及版本、浏览器内核、等信息的标识。
+     * @return map储存响应的数据
+     */
+    @GetMapping("/requestHead")
+    public Map<String, Object> testRequestHead(@RequestHeader("Host") String host, @RequestHeader("User-Agent") String userAgent) {
+        HashMap<String, Object> map = new HashMap<>(16);
+        map.put("host", host);
+        map.put("userAgent", userAgent);
+        return map;
+    }
+
+    @GetMapping("/addCookie")
+    public String addCookie(HttpServletResponse response) {
+        // 创建cookie对象
+        Cookie username = new Cookie("username", "zs");
+
+        // 设置cookie的销毁时间
+        username.setMaxAge(24 * 60 * 60);
+
+        // 通过响应将cookie设置给客户端
+        response.addCookie(username);
+
+        // 请求转发
+        return "forward:/getCookie";
+    }
+
+    @GetMapping("/getCookie")
+    public Map<String, Object> getCookie(@CookieValue("username") String name) {
+        Map<String, Object> map = new HashMap<>(16);
+        map.put("name", name);
+        return map;
     }
 }

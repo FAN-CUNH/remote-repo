@@ -16,3 +16,7 @@ emp:
     home:
       - { province: 江苏, city: 无锡 }
       - { province: 上海, city: 上海 }
+spring:
+  servlet:
+    multipart:
+      enabled: true

@@ -30,8 +30,8 @@ public class SecondKillServiceImpl implements SecondKillService {
      * @return
      */
     @Override
-    public Result secKill(String uid, Integer pid) {
-        Long o = LuaUtil.loadScript(jedisPool, "secondKill.lua", 2, uid, pid.toString());
+    public Result secKill(String uid, String pid) {
+        Long o = LuaUtil.loadScript(jedisPool, "secondKill.lua", 2, pid, uid);
         if (o != null) {
             if (o == 1) {
                 //1.未发现库存 商品已下架

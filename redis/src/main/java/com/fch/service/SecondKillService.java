@@ -17,5 +17,5 @@ public interface SecondKillService {
      * @param id 商品id
      * @return
      */
-    Result secKill(String uid, Integer id);
+    Result secKill(String uid, String id);
 }

@@ -41,13 +41,15 @@ public class JedisTransactionTest {
         Transaction multi = jedis.multi();
 
         try {
+            // 命令入队
             multi.set("user1", string);
-            //int i = 10 / 0;
+            // int i = 10 / 0;
             multi.set("user2", string);
 
-
+            // 执行事务
             multi.exec();
         } catch (Exception e) {
+            // 放弃事务
             multi.discard();
             e.printStackTrace();
         } finally {

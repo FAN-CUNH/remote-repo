@@ -27,7 +27,7 @@ public class ServletConfig extends AbstractAnnotationConfigDispatcherServletInit
      */
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {RedisConfig.class, SpringMVCConfig.class};
+        return new Class[] {SpringMVCConfig.class, RedisConfig.class};
     }
 
     /**
