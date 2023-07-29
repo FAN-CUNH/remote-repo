@@ -1,0 +1,61 @@
+server:
+  port: 80
+
+spring:
+  # \u914D\u7F6E\u6570\u636E\u6E90\u57FA\u672C\u4FE1\u606F
+  datasource:
+    # JDBC\u5C5E\u6027\u914D\u7F6E
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/my-db?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # \u9488\u5BF9druid\u6570\u636E\u6E90\u7684\u914D\u7F6E
+    druid:
+      # \u76D1\u63A7SpringBean,\u5F00\u542FSpring\u76D1\u63A7
+      aop-patterns: com.fch.*
+      # \u5F00\u542FSQL\u76D1\u63A7\uFF0C \u9632\u706B\u5899\u76D1\u63A7\uFF0C \u65E5\u5FD7\u76D1\u63A7
+      filters: stat, wall, slf4j
+
+      # \u7528\u4E8E\u91C7\u96C6web-JDBC\u5173\u8054\u7684\u76D1\u63A7\u6570\u636E
+      web-stat-filter:
+        enabled: true # \u5F00\u542Fweb\u76D1\u63A7
+        url-pattern: /* # \u8FC7\u6EE4\u6240\u6709\u8BF7\u6C42
+        exclusions: "*.js, *.git, *.jpg, *.png, *.css, *.ico, /druid/*" # \u653E\u884C
+
+      # \u63D0\u4F9B\u76D1\u63A7\u4FE1\u606F\u5C55\u793A\u7684html\u9875\u9762
+      stat-view-servlet:
+        enabled: true # \u5F00\u542Fhtml\u9875\u9762\u63D0\u793A
+        url-pattern: /druid/* # \u8BBF\u95EE\u8DEF\u5F84
+        login-username: admin
+        login-password: admin
+        reset-enable: false # \u7981\u6B62\u6E05\u7A7A\u7EDF\u8BA1\u6570\u636E\u6309\u94AE
+
+      # \u7EC6\u8282\u914D\u7F6E
+      filter:
+        # stat SQL\u76D1\u63A7\uFF0C\u5BF9\u4E0A\u9762\u7684filters\u91CC\u9762\u7684stat\u7684\u8BE6\u7EC6\u914D\u7F6E
+        stat:
+          enabled: true # \u5F00\u542FSQL\u76D1\u63A7
+          log-slow-sql: true # \u5F00\u542F\u6162\u65E5\u5FD7\u67E5\u8BE2
+          slow-sql-millis: 1000 # \u5355\u4F4D\u4E3Ams\uFF0C\u6307\u5B9Asql\u6267\u884C\u591A\u4E45\u7B97\u6162\uFF0C\u6B64\u65F6\u81EA\u5B9A\u5927\u4E8E1\u79D2\u5C31\u7B97\u6162
+
+        # \u9632\u706B\u5899\uFF0C\u5BF9\u4E0A\u9762\u7684filters\u91CC\u9762\u7684wall\u7684\u8BE6\u7EC6\u914D\u7F6E
+        wall:
+          enabled: true
+          config:
+            selelct-allow: true # \u8BBE\u7F6E\u7981\u6B62\u67E5\u8BE2
+            alter-table-allow: false # \u8BBE\u7F6E\u7981\u6B62\u4FEE\u6539\u8868
+            drop-table-allow: true # \u8BBE\u7F6E\u5141\u8BB8\u5220\u9664\u8868
+
+# \u914D\u7F6Emybatis\u89C4\u5219
+mybatis:
+  mapper-locations: classpath:com/fch/mapper/*.xml # mapper\u63A5\u53E3\u7684\u6620\u5C04xml\u6587\u4EF6
+  configuration:
+    map-underscore-to-camel-case: true # \u5F00\u542F\u9A7C\u5CF0\u6620\u5C04
+  type-aliases-package: com.fch.domain
+
+# \u5236\u5B9A\u5305\u4E0B\u7684\u65E5\u5FD7\u7EA7\u522B
+logging:
+  level:
+    com:
+      fch:
+        mapper: debug

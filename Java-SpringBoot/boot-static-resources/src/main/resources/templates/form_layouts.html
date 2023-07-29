@@ -356,13 +356,13 @@
                 <li>
                     <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         <img src="images/photos/user-avatar.png" alt="" />
-                        John Doe
+                        [[${session.user.username}]]
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
                         <li><a href="#"><i class="fa fa-user"></i>  Profile</a></li>
                         <li><a href="#"><i class="fa fa-cog"></i>  Settings</a></li>
-                        <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                        <li><a th:href="@{/logout}"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     </ul>
                 </li>
 
@@ -398,18 +398,23 @@
                         Basic Forms
                     </header>
                     <div class="panel-body">
-                        <form role="form">
+                        <form role="form" th:action="@{/upload}" enctype="multipart/form-data" method="post">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <label for="exampleInputUsername">Username</label>
+                                <input type="text" class="form-control" id="exampleInputUsername" placeholder="Username" name="username">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
-                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile" name="photo">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputMultipleFile">File input</label>
+                                <input type="file" id="exampleInputMultipleFile" name="photos" multiple>
                                 <p class="help-block">Example block-level help text here.</p>
                             </div>
                             <div class="checkbox">

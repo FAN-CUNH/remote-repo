@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="redis:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1993670b-5c56-4fa9-b456-cc464d6f0d7a" name="Changes" comment="" />
+    <list default="true" id="1993670b-5c56-4fa9-b456-cc464d6f0d7a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/comfig/IConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/comfig/IConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/static/js/fullcalendar/bootstrap-fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/static/js/fullcalendar/bootstrap-fullcalendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/form_layouts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/form_layouts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/m_setmeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/m_setmeal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/reids.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/reids.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -28,6 +58,9 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectId" id="2SxVk2ELctmzQaSgUOXhZKh8slQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,11 +70,164 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/geek_health",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "86a1b907d54bf7010394bf316e183e67",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\webapp" />
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\java\com\fch\service" />
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\java\com\fch" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\test\java\com\fch\test" />
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\webapp" />
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\resources" />
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\java\com\fch" />
+      <recent name="E:\IntelliJ-IDEA-Project\redis\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.JedisTransactionTest.testJedisTransaction">
+    <configuration name="JedisTest.testPing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.test" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.test.JedisTest" />
+      <option name="METHOD_NAME" value="testPing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JedisTransactionTest.testJedisTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fch.test" />
+      <option name="MAIN_CLASS_NAME" value="com.fch.test.JedisTransactionTest" />
+      <option name="METHOD_NAME" value="testJedisTransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.28" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="redis:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="98bee987-ffb7-4ee6-88e9-8fc4f333f669" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60629" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="redis:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.JedisTransactionTest.testJedisTransaction" />
+      <item itemvalue="JUnit.JedisTest.testPing" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.28" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JedisTransactionTest.testJedisTransaction" />
+        <item itemvalue="JUnit.JedisTest.testPing" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,8 +236,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690088359092</updated>
-      <workItem from="1690088360165" duration="1000" />
+      <workItem from="1690088360165" duration="6383000" />
+      <workItem from="1690101703263" duration="49000" />
+      <workItem from="1690163008482" duration="2138000" />
+      <workItem from="1690419759999" duration="4196000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArithmeticException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -5,22 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa636b0e-9ab5-43ef-bada-4fecac7919fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/OrdersettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/ordersetting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/template/ordersetting_template.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/utils/POIUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/OrdersettingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/OrdersettingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/ExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/controller/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/setmeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/setmeal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/constant/Msg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/constant/Msg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Ordersetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/common/src/main/java/com/fch/domain/Ordersetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service/src/main/java/com/fch/service/SetmealService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/service_provider/src/main/java/com/fch/service/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Checkgroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/CheckgroupCheckitemExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/CheckgroupCheckitemKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/CheckgroupExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Checkitem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/CheckitemExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/MemberExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/MenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Orders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/OrdersExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Ordersetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/OrdersettingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/PermissionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/RoleExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/RoleMenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/RoleMenuKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/RolePermissionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/RolePermissionKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/Setmeal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/SetmealCheckgroupExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/SetmealCheckgroupKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/SetmealExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/domain/UserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/CheckgroupCheckitemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/CheckgroupMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/CheckitemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/MemberMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/MenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/OrdersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/OrdersettingMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/PermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/RoleMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/RolePermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/SetmealCheckgroupMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/SetmealMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/CheckgroupCheckitemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/CheckgroupMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/CheckitemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/MemberMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/MenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/OrdersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/OrdersettingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/PermissionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/RoleMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/RolePermissionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/SetmealCheckgroupMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/SetmealMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fch/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/controller/SecondKillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/controller/SecondKillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/service/SecondKillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/service/SecondKillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/service/impl/SecondKillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/service/impl/SecondKillServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/utils/LuaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/utils/LuaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/resources/secondKill.lua" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/resources/secondKill.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis/src/test/java/com/fch/test/JedisTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/test/java/com/fch/test/JedisTransactionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +203,7 @@
       <workItem from="1689210283409" duration="88000" />
       <workItem from="1689310046965" duration="177000" />
       <workItem from="1689314261379" duration="229000" />
+      <workItem from="1690191335390" duration="98000" />
     </task>
     <servers />
   </component>

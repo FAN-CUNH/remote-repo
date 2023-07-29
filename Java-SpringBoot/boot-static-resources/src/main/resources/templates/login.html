@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -24,14 +24,16 @@
 
 <div class="container">
 
-    <form class="form-signin" action="http://view.jqueryfuns.com/2014/4/10/7_df25ceea231ba5f44f0fc060c943cdae/index.html">
+    <form class="form-signin" th:action="@{/login}" method="post">
         <div class="form-signin-heading text-center">
             <h1 class="sign-title">登录</h1>
             <img src="images/login-logo.png" alt=""/>
         </div>
         <div class="login-wrap">
-            <input type="text" class="form-control" placeholder="用户名" autofocus>
-            <input type="password" class="form-control" placeholder="密码">
+            <!-- 消息提醒 -->
+            <label style="color: red" th:text="${msg}"></label>
+            <input type="text" class="form-control" placeholder="用户名" autofocus name="username">
+            <input type="password" class="form-control" placeholder="密码" name="password">
 
             <button class="btn btn-lg btn-login btn-block" type="submit">
                 <i class="fa fa-check"></i>
@@ -54,7 +56,8 @@
         </div>
 
         <!-- Modal -->
-        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+             class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -63,7 +66,8 @@
                     </div>
                     <div class="modal-body">
                         <p>输入您的电子邮件地址重新设置您的密码.</p>
-                        <input type="text" name="email" placeholder="邮箱" autocomplete="off" class="form-control placeholder-no-fix">
+                        <input type="text" name="email" placeholder="邮箱" autocomplete="off"
+                               class="form-control placeholder-no-fix">
 
                     </div>
                     <div class="modal-footer">
@@ -78,7 +82,6 @@
     </form>
 
 </div>
-
 
 
 <!-- Placed js at the end of the document so the pages load faster -->
