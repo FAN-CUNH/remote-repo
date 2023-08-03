@@ -5,6 +5,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-druid-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-static-resources/pom.xml" />
       </list>
     </option>
   </component>

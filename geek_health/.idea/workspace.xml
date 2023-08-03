@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d7de99f-95a4-4bf6-b0d6-74a2be9df1ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/comfig/IConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/comfig/IConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/java/com/fch/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/static/js/fullcalendar/bootstrap-fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/static/js/fullcalendar/bootstrap-fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/form_layouts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/form_layouts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-SpringBoot/boot-static-resources/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/webapp/pages/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/webapp/pages/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/src/main/webapp/pages/m_setmeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/main/webapp/pages/m_setmeal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/reids.md" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/reids.md" afterDir="false" />
-    </list>
+    <list default="true" id="5d7de99f-95a4-4bf6-b0d6-74a2be9df1ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,6 +243,7 @@
       <workItem from="1690426951109" duration="108000" />
       <workItem from="1690505850430" duration="81000" />
       <workItem from="1690613789230" duration="36000" />
+      <workItem from="1690868973331" duration="47000" />
     </task>
     <servers />
   </component>

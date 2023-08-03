@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85438950-cc35-44e9-aba9-65fb4e80dfc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/java/com/fch/comfig/IConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/java/com/fch/comfig/IConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/java/com/fch/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/java/com/fch/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/resources/static/js/fullcalendar/bootstrap-fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/resources/static/js/fullcalendar/bootstrap-fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/resources/templates/form_layouts.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/resources/templates/form_layouts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-static-resources/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot-static-resources/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/backend/src/main/webapp/pages/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/m_setmeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/../geek_health/mobile/src/main/webapp/pages/m_setmeal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven-project/vue-admin-template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/fch/reids.md" beforeDir="false" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/fch/reids.md" afterDir="false" />
-    </list>
+    <list default="true" id="85438950-cc35-44e9-aba9-65fb4e80dfc8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,19 +36,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/Java-SpringBoot",
-    "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "d164d99c46d45be6b1e7585ff7ea10e7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/design-pattern&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3e96462ada85bd620bc275d38a713edd&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Java-SpringBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Java-SpringBoot" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootDruidApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boot-druid-mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fch.BootDruidApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootMybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boot-mybatis-plus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fch.BootMybatisPlusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boot-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fch.BootRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootStaticResourcesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boot-static-resources" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fch.BootStaticResourcesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fch.SpringbootApplication" />
@@ -79,6 +122,10 @@
       <updated>1689833017266</updated>
       <workItem from="1689833018387" duration="48000" />
       <workItem from="1690613929724" duration="40000" />
+      <workItem from="1690869187808" duration="2640000" />
+      <workItem from="1690879058029" duration="524000" />
+      <workItem from="1690879595021" duration="37000" />
+      <workItem from="1690879648651" duration="1198000" />
     </task>
     <servers />
   </component>
