@@ -5,39 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/geek_health/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/layout/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/permission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/dashboard/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/webapp/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/webapp/pages/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/CoffeeBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/CoffeeBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/ingredient/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/ingredient/Decorator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="0f473ad7c2bb9c053195aace1829b39584b62fc0" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\apache-maven-3.6.2\mav-repo" />
         <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -48,6 +49,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2SHR8KqojAL9lfVqb9rwQGGLmAL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,25 +63,76 @@
     "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/IntelliJ-IDEA-Project",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.build.tools.auto.reload": "SELECTIVE",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="CoffeeBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.decorator.CoffeeBar" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CoffeeBar" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="" />
+      <changelist id="" name="New changelist" comment="" />
       <created>1688801359184</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688801359184</updated>
       <workItem from="1688801360408" duration="53000" />
+      <workItem from="1691053237681" duration="3943000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Gitee/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

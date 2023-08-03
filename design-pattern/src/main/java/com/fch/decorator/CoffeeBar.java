@@ -2,6 +2,8 @@ package com.fch.decorator;
 
 import com.fch.decorator.coffee.Drink;
 import com.fch.decorator.coffee.LongBlack;
+import com.fch.decorator.ingredient.Chocolate;
+import com.fch.decorator.ingredient.Milk;
 
 /**
  * @packageName com.fch.decorator
@@ -13,7 +15,18 @@ import com.fch.decorator.coffee.LongBlack;
  */
 public class CoffeeBar {
     public static void main(String[] args) {
+        // 单品咖啡
         Drink order = new LongBlack();
-        System.out.println("order = " + order);
+
+        // 加份牛奶
+        order = new Milk(order);
+
+        // 加分巧克力
+        order = new Chocolate(order);
+
+        // 加分巧克力
+        order = new Chocolate(order);
+
+        System.out.println("描述 = " + order.getDes() + " 费用 = " + order.cost() );
     }
 }

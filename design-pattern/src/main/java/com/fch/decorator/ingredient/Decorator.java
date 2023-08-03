@@ -27,7 +27,7 @@ public class Decorator extends Drink {
      */
     @Override
     public float cost() {
-        return super.getPrice() + obj.getPrice();
+        return super.getPrice() + obj.cost();
     }
 
     /**
@@ -35,6 +35,6 @@ public class Decorator extends Drink {
      */
     @Override
     public String getDes() {
-        return super.getDes() + " " + super.getPrice() + obj.getDes() + " " + obj.getPrice();
+        return super.getDes() + " " + super.getPrice() + obj.getDes();
     }
 }
