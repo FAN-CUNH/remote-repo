@@ -4,38 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="" />
-=======
-<<<<<<< HEAD
-    <list default="true" id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/geek_health/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/utils/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/dashboard/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project/vue-admin-template/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project/vue-admin-template/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/config/SpringMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/java/com/fch/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/webapp/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/book-management-ssm/src/main/webapp/pages/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-items/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/practice-items/pom.xml" afterDir="false" />
     </list>
-=======
-    <list default="true" id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="" />
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="UML Sequence" />
-        <option value="UML Class" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -51,237 +47,37 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="#JAVA_HOME" />
-  </component>
-  <component name="ProjectId" id="2TN5tORpxsrYTatIsWhV9QMm7xV" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2SHR8KqojAL9lfVqb9rwQGGLmAL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/design-pattern/src/main/java/com/fch/adapter/objectadapter",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.build.tools.auto.reload": "SELECTIVE",
-<<<<<<< HEAD
     "settings.editor.selected.configurable": "preferences.pluginManager",
-=======
-<<<<<<< HEAD
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
-=======
-    "settings.editor.selected.configurable": "preferences.pluginManager",
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\adapter\objectadapter" />
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\prototype\prototype" />
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\abstractfactory" />
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\factorymode\factorymethod" />
-    </key>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\decorator\img" />
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\decorator" />
-    </key>
-=======
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.fch.prototype.prototype.client" />
-      <recent name="com.fch.factorymode.factorymethod.pizza" />
-      <recent name="com.fch.simpleFactory.store" />
-      <recent name="com.fch.simpleFactory.order" />
-    </key>
-  </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.Client">
-=======
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.client">
-=======
-  <component name="RunManager" selected="Application.Client">
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.adapter.objectadapter.Client" />
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.adapter.objectadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="DeepClient01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient01" />
-=======
-<<<<<<< HEAD
-    <configuration name="DeepClient02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient02" />
-=======
-    <configuration name="DeepClient01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient01" />
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.prototype.prototype.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    <configuration name="client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.bridge.client" />
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.bridge.*" />
-=======
->>>>>>> 097ac3f (新增部分设计模式2)
-    <configuration name="DeepClient02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient02" />
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.prototype.prototype.client.*" />
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.fch.adapter.classadapter.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.adapter.classadapter.Client" />
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.adapter.classadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.fch.builder.client.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.builder.client.Client" />
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fch.builder.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        <item itemvalue="Application.client" />
-=======
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.com.fch.adapter.classadapter.Client" />
-        <item itemvalue="Application.com.fch.builder.client.Client" />
-        <item itemvalue="Application.DeepClient02" />
-<<<<<<< HEAD
-        <item itemvalue="Application.DeepClient01" />
-=======
-<<<<<<< HEAD
-=======
-        <item itemvalue="Application.DeepClient01" />
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="" />
-      <created>1690870911594</created>
+      <changelist id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="" />
+      <created>1688801359184</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1690870911594</updated>
-      <workItem from="1690870912657" duration="6689000" />
-      <workItem from="1690877885481" duration="925000" />
-      <workItem from="1690879055351" duration="526000" />
-      <workItem from="1690879591773" duration="40000" />
-<<<<<<< HEAD
-      <workItem from="1690879645963" duration="32966000" />
-=======
-<<<<<<< HEAD
-      <workItem from="1690879645963" duration="50213000" />
-=======
-      <workItem from="1690879645963" duration="32966000" />
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
+      <updated>1688801359184</updated>
+      <workItem from="1688801360408" duration="53000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-=======
->>>>>>> origin/main
->>>>>>> 097ac3f (新增部分设计模式2)
 </project>
