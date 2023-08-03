@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="eca45d99-fb21-489b-9fc9-9980915d99a9" name="Changes" comment="" />
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +81,15 @@
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.build.tools.auto.reload": "SELECTIVE",
+<<<<<<< HEAD
     "settings.editor.selected.configurable": "preferences.pluginManager",
+=======
+<<<<<<< HEAD
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+=======
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -82,6 +100,16 @@
       <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\abstractfactory" />
       <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\factorymode\factorymethod" />
     </key>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\decorator\img" />
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\decorator" />
+    </key>
+=======
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fch.prototype.prototype.client" />
       <recent name="com.fch.factorymode.factorymethod.pizza" />
@@ -89,7 +117,15 @@
       <recent name="com.fch.simpleFactory.order" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Client">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="Application.client">
+=======
+  <component name="RunManager" selected="Application.Client">
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fch.adapter.objectadapter.Client" />
       <module name="design-pattern" />
@@ -103,8 +139,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="DeepClient01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient01" />
+=======
+<<<<<<< HEAD
+    <configuration name="DeepClient02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient02" />
+=======
+    <configuration name="DeepClient01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient01" />
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
@@ -116,12 +162,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <configuration name="client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.bridge.client" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.bridge.*" />
+=======
+>>>>>>> 097ac3f (新增部分设计模式2)
     <configuration name="DeepClient02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fch.prototype.prototype.client.DeepClient02" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fch.prototype.prototype.client.*" />
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +218,25 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <item itemvalue="Application.client" />
+=======
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.com.fch.adapter.classadapter.Client" />
         <item itemvalue="Application.com.fch.builder.client.Client" />
         <item itemvalue="Application.DeepClient02" />
+<<<<<<< HEAD
         <item itemvalue="Application.DeepClient01" />
+=======
+<<<<<<< HEAD
+=======
+        <item itemvalue="Application.DeepClient01" />
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
       </list>
     </recent_temporary>
   </component>
@@ -177,11 +252,36 @@
       <workItem from="1690877885481" duration="925000" />
       <workItem from="1690879055351" duration="526000" />
       <workItem from="1690879591773" duration="40000" />
+<<<<<<< HEAD
       <workItem from="1690879645963" duration="32966000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1690879645963" duration="50213000" />
+=======
+      <workItem from="1690879645963" duration="32966000" />
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+=======
+>>>>>>> origin/main
+>>>>>>> 097ac3f (新增部分设计模式2)
 </project>
