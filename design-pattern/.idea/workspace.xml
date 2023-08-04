@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/CoffeeBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/CoffeeBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/ingredient/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/ingredient/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/College.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/OrganizationComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/University.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/jdksource/Composite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/学校院系展示需求.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/组合模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/img/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +65,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/IntelliJ-IDEA-Project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/58238/Desktop/mallchat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\decorator\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.composite.Client" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.composite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoffeeBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fch.decorator.CoffeeBar" />
       <module name="design-pattern" />
@@ -86,8 +113,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Composite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.composite.jdksource.Composite" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.composite.jdksource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Composite" />
         <item itemvalue="Application.CoffeeBar" />
       </list>
     </recent_temporary>
@@ -96,13 +138,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="" />
-      <changelist id="" name="New changelist" comment="" />
       <created>1688801359184</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688801359184</updated>
       <workItem from="1688801360408" duration="53000" />
-      <workItem from="1691053237681" duration="3943000" />
+      <workItem from="1691053237681" duration="7106000" />
+      <workItem from="1691112955963" duration="5764000" />
     </task>
     <servers />
   </component>

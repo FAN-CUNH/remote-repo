@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85438950-cc35-44e9-aba9-65fb4e80dfc8" name="Changes" comment="" />
+    <list default="true" id="85438950-cc35-44e9-aba9-65fb4e80dfc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/composite/组合模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/decorator/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/decorator/img/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pattern/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/design-pattern&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ-IDEA-Project/Java-SpringBoot&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -126,6 +131,8 @@
       <workItem from="1690879058029" duration="524000" />
       <workItem from="1690879595021" duration="37000" />
       <workItem from="1690879648651" duration="1198000" />
+      <workItem from="1691064642003" duration="1396000" />
+      <workItem from="1691112978837" duration="138000" />
     </task>
     <servers />
   </component>
