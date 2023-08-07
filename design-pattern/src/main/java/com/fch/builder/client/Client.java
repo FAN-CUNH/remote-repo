@@ -7,7 +7,7 @@ import com.fch.builder.product.House;
 
 /**
  * @packageName com.fch.builder.client
- * @ClassName Client
+ * @ClassName StaticClient
  * @Description TODO
  * @Author Fan-CUNH
  * @Date 2023/8/2 19:49

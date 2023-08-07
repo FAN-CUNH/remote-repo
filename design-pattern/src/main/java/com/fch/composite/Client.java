@@ -7,7 +7,7 @@ import com.fch.composite.component.composite.University;
 
 /**
  * @packageName com.fch.composite
- * @ClassName Client
+ * @ClassName StaticClient
  * @Description TODO 模拟客户端
  * @Author Fan-CUNH
  * @Date 2023/8/4 10:54

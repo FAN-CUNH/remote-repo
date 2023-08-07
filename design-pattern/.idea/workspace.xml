@@ -5,19 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92d03ce9-5b9a-4882-b008-5b53e360846f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/College.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/OrganizationComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/component/University.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/jdksource/Composite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/学校院系展示需求.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/组合模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/OA系统采购审批需求.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/SpringMVC请求执行流程图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/handle/Approve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/handle/CollegeApprove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/handle/DepartmentApprove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/handle/PrincipalApprove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/handle/VicePrincipalApprove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/img/责任链模式原理类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/img/责任链模式解决OA系统采购审批需求.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/request/PurchaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/chainofresponsibility/责任链模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/LightOffCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/LightOnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/LightReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/NoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/RemoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/img/命令模式原理图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/img/命令模式解决智能生活项目类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/命令模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/command/智能生活项目需求.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/DVD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/HomeTheaterFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/Popcorn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/Projector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/Screen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/Stereo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/ConcreteWebsite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/Website.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/WebsiteFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/img/享元模式方案解决网站需求类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/img/享元模式的原理类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/jdksource/Flyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/享元模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/flyweight/展示网站项目需求.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/CglibClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/DynamicClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/StaticClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/cglibproxy/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/cglibproxy/TeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/dynamicproxy/ITeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/dynamicproxy/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/dynamicproxy/TeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/img/Cglib代理实例示意图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/img/代理模式原理图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/img/动态代理实例示意图.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/img/远程代理.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/img/静态代理实例示意图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/staticproxy/ITeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/staticproxy/TeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/staticproxy/TeacherDaoProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/proxy/代理模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/StrategyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/TraditionClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/behavior/fly/BadFly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/behavior/fly/FlyBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/behavior/fly/GoodFly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/behavior/fly/NoFly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/img/传统方案解决鸭子问题的UML类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/img/传统方案解决鸭子问题的示例图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/img/策略模式在JDK中的应用.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/img/策略模式的原理类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/img/策略模式解决鸭子问题的UML类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/strategy/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/strategy/PekingDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/strategy/ToyDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/strategy/WildDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/tradition/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/tradition/PekingDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/tradition/ToyDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/tradition/WildDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/策略模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/strategy/鸭子问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/PeanutSoyMilk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/PureSoyMilk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/RedBeanSoyMilk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/SoyMilk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/img/模版模式解决豆浆制作问题.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/jdksource/template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/模版方法模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/template/豆浆制作问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Fail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/ObjectStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Success.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/Woman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/img/访问者模式原理类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/img/访问者模式解决测评系统的类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/测评系统需求.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fch/visitor/访问者模式.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/img/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/jdksource/DataInputStreamDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/decorator/装饰者模式在JDK源码中的应用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/adapter/classadapter/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/adapter/classadapter/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/adapter/objectadapter/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/adapter/objectadapter/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/builder/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/builder/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/composite/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/composite/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/facade/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/facade/外观模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/facade/外观模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/prototype/prototype/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/prototype/prototype/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fch/prototype/traditional/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fch/prototype/traditional/client/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +123,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,34 +162,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/58238/Desktop/mallchat&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/IntelliJ-IDEA-Project/Java-SpringBoot/boot-mybatis-plus",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\strategy" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\decorator\img" />
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\chainofresponsibility\img" />
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\chainofresponsibility" />
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\visitor\img" />
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\visitor" />
+      <recent name="E:\IntelliJ-IDEA-Project\design-pattern\src\main\java\com\fch\command\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fch.strategy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.composite.Client" />
+  <component name="RunManager" selected="Application.com.fch.chainofresponsibility.Client">
+    <configuration name="StrategyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.strategy.StrategyClient" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fch.composite.*" />
+          <option name="PATTERN" value="com.fch.strategy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +207,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoffeeBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.decorator.CoffeeBar" />
+    <configuration name="TraditionClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.strategy.TraditionClient" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fch.decorator.*" />
+          <option name="PATTERN" value="com.fch.strategy.strategy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +220,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Composite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fch.composite.jdksource.Composite" />
+    <configuration name="com.fch.chainofresponsibility.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.chainofresponsibility.Client" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fch.composite.jdksource.*" />
+          <option name="PATTERN" value="com.fch.chainofresponsibility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.fch.command.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.command.Client" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.fch.visitor.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fch.visitor.Client" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fch.visitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,9 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Composite" />
-        <item itemvalue="Application.CoffeeBar" />
+        <item itemvalue="Application.com.fch.chainofresponsibility.Client" />
+        <item itemvalue="Application.com.fch.visitor.Client" />
+        <item itemvalue="Application.com.fch.command.Client" />
+        <item itemvalue="Application.StrategyClient" />
+        <item itemvalue="Application.TraditionClient" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +279,7 @@
       <updated>1688801359184</updated>
       <workItem from="1688801360408" duration="53000" />
       <workItem from="1691053237681" duration="7106000" />
-      <workItem from="1691112955963" duration="5764000" />
+      <workItem from="1691112955963" duration="63919000" />
     </task>
     <servers />
   </component>

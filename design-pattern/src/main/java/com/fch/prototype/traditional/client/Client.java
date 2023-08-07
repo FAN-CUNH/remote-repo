@@ -4,7 +4,7 @@ import com.fch.prototype.traditional.sheep.Sheep;
 
 /**
  * @packageName com.fch.prototype.traditional.client
- * @ClassName Client
+ * @ClassName StaticClient
  * @Description TODO
  * @Author Fan-CUNH
  * @Date 2023/8/2 15:45

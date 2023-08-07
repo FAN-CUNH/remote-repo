@@ -2,7 +2,7 @@ package com.fch.adapter.objectadapter;
 
 /**
  * @packageName com.fch.adapter.classadapter
- * @ClassName Client
+ * @ClassName StaticClient
  * @Description TODO 客户端
  * @Author Fan-CUNH
  * @Date 2023/8/2 21:14
